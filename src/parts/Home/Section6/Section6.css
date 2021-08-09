@@ -1,0 +1,46 @@
+.download {
+  height: 800px;
+  overflow: hidden;
+}
+.download-img {
+  height: 50%;
+}
+.download-img img {
+  height: 100%;
+}
+
+.d-app {
+  height: 50%;
+}
+.download .d-app .downloadapp {
+  background: #f9f9f9;
+  height: 100%;
+  color: #222;
+  padding: 40px;
+}
+
+.download .d-app b {
+  font-size: 2rem;
+  text-align: right;
+}
+.download .d-app p {
+  text-align: justify;
+  text-indent: 25px;
+  margin-top: 25px;
+  font-size: 0.9rem;
+}
+
+.download-section {
+  background: #f9f9f9;
+}
+.detail-view {
+  text-align: justify;
+  max-width: 350px;
+  margin: 2em auto;
+}
+.detail-view h3 {
+  font-weight: 600;
+}
+.download-app {
+  text-align: center;
+}

@@ -1,0 +1,74 @@
+.homeSection1 {
+  /* text-align: center; */
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.homeSec1Info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.homeSec1Info h1 {
+}
+
+.homeSec1Info p {
+  margin: 20px 0;
+}
+
+.homeSec1BtnContainer {
+  transform: skew(25deg);
+  background: rgb(0, 90, 140);
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.homeSec1Btn {
+  transform: skew(-25deg);
+  font-weight: bold;
+  color: white;
+}
+
+.homeSec1Design {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.rightRectangle {
+  background: rgb(115, 115, 115);
+  width: 25vw;
+  height: 70%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.leftRectangle {
+  background: rgb(255, 228, 132);
+  width: 12vw;
+  height: 15vw;
+  position: absolute;
+  left: 55%;
+  top: 50%;
+  z-index: -1;
+  transform: translatey(-100%);
+}
+
+.camGalImg {
+  /* width: 350px;
+    height: 350px; */
+  width: 40vw;
+  max-width: 500px;
+  height: 40vw;
+  max-height: 500px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 10px solid rgb(0, 90, 140);
+}
