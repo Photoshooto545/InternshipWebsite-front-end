@@ -1,34 +1,34 @@
 import React from "react";
 
 import "./Section6.css";
-import mobImg from "./img/pho.png";
+import mobImg from "./img/phoneimg.png";
 import gpImg from "./img/gp.png";
+import playstore from "./img/playstore.png";
+
 
 const Section6 = () => {
   return (
-    <section class="homeSection6">
-      <div class="homeSection6Container">
-        <div class="homeSection6Row">
-          <div class="homeSection6Col">
-            <div class="mobile-view">
-              <img data-tilt src={mobImg} alt="mobile" />
+      <div className="homeSection6Container">
+          <div className="homeSection6Col">
+            <div className="mobile-view">
+              <img className="mobileimage" data-tilt src={mobImg} alt="mobile" />
             </div>
           </div>
-          <div class="col download-link-box">
-            <div class="detail-view">
-              <h3>Download Our App</h3>
-              <p>
+          <div className="col download-link-box">
+            <div className="detail-view">
+              <h3 className="downloadappheading">Download Our App</h3>
+              <p className="downloadapplines">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna
               </p>
-              <div class="download-app">
-                <img data-tilt src={gpImg} alt="" />
+              <div className="download-app">
+                {/* <img className="googleplayestoreimage" data-tilt src={gpImg} alt="" /> */}
+                <img className="googleplayestoreimage" data-tilt src={playstore} alt="" />
+                <h4 className="googleplay">Google Play</h4>
               </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
+    </div>
   );
 };
 

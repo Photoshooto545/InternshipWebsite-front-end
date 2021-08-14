@@ -1,99 +1,52 @@
 import React from "react";
 
 import "./Section7.css";
-
+import image from "./img/image.png"
 const Section7 = () => {
   return (
     <>
-      <section class="my-5">
-        <div class="container">
-          <div class="row">
-            <h1 class="my-3">
-              <b>Do you like the Internship?</b>
-            </h1>
-            <div class="col">
-              <div class="row">
-                <div class="name">
-                  <input type="text" placeholder="Name" />
-                </div>
-              </div>
-              <div class="row">
-                <div class="name">
-                  <input type="text" placeholder="Phone no." />
-                </div>
-              </div>
-              <div class="row">
-                <div class="name">
-                  <input type="text" placeholder="From" />
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="row">
-                <div class="name">
-                  <input type="text" placeholder="E-mail" />
-                </div>
-              </div>
-              <div class="row">
-                <div class="name">
-                  <input type="text" placeholder="Program" />
-                </div>
-              </div>
-              <div class="row">
-                <div class="name">
-                  <input type="text" placeholder="To" />
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <img data-tilt src="image.png" alt="Loading" width="100%" />
-            </div>
-            <div class="row">
-              <div class="col-8 text-center">
-                <button type="button" class="revert-btn">
-                  Reserve Seat
-                </button>
-              </div>
-            </div>
-          </div>
+    <div className="doyoulikeinternship">
+      <div className="leftdoyoulikeinternship">
+        <div className="doyoulikeinternshipheading">
+          Do you like the Internship
         </div>
-      </section>
-
-      <section class="container">
-        <div class="row">
-          <div class="col">
-            <h1>Subscribe to Newsletter</h1>
-            <div class="name mx-auto">
-              <input type="text" placeholder="E-mail" />
-            </div>
-          </div>
-          <div class="col text-center">
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="flexCheckDefault"
-              />
-              <label class="form-check-label" for="flexCheckDefault">
-                Accept all Terms and Conditions
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="flexCheckDefault"
-              />
-              <label class="form-check-label" for="flexCheckDefault">
-                Accept all Privacy and Policy
-              </label>
-            </div>
-            <button class="revert-btn">Join</button>
-          </div>
+        <div className="doyoulikeinternshipinfo">
+          <input className="doyoulikeinternshipdetails" type="text" name="name" placeholder="Name"/>
+          <input className="doyoulikeinternshipdetails" type="email" name="email" placeholder="E-mail"/>
+          <input className="doyoulikeinternshipdetails" type="phone" name="phone" placeholder="Phone no."/>
+          <select className="doyoulikeinternshipdetails doyouinternship" name="cars" id="cars">
+            <option selected className="doyoulikeinternshipdetails doyouinternship" value="Program Name">Program Name</option>
+            <option className="doyoulikeinternshipdetails doyouinternship" value="volvo">Volvo</option>
+            <option className="doyoulikeinternshipdetails doyouinternship" value="saab">Saab</option>
+            <option className="doyoulikeinternshipdetails doyouinternship" value="opel">Opel</option>
+            <option className="doyoulikeinternshipdetails doyouinternship" value="audi">Audi</option>
+          </select>
+          <input className="doyoulikeinternshipdetails" type="text" name="from" placeholder="From"/>
+          <input className="doyoulikeinternshipdetails" type="text" name="to" placeholder="To"/>
         </div>
-      </section>
+        <div className="reservebutton">
+          <button className="reserveseatbutton">Reserve Seat</button>
+        </div>
+      </div>
+      <div className="rightdoyoulikeinternship">
+        <img  className="rightdoyoulikeinternshipimage" src={image} alt="" />
+      </div>
+    </div>
+    <div className="subscribetonewsletter">
+      <div className="subscribetonewsletterheading"> Subscribe to Newsletter</div>
+      <div className="subscribetonewsletterdetailscontainer">
+      <div className="subscribetonewsletteremail"><input className="subscribetonewsletterdetails" type="email" name="email" placeholder="E-mail"/></div>
+      <div className="termsandpolicy">
+        {/* <input type="checkbox" className="termsandcondition"  name="terms" value=""/>
+        <label for="vehicle1" className="policy">Accept all Terms and Conditions</label><br></br>
+        <input type="checkbox" className="termsandcondition"  name="policy" value=""/>
+        <label for="vehicle2" className="policy"> Accept all Privacy and Policy</label> */}
+        <label class="main">Accept all Terms and Conditions<input type="checkbox"/><span class="geekmark"></span></label>
+        <label class="main">Accept all Privacy and Policy<input type="checkbox"/><span class="geekmark"></span></label>
+      </div>
+      <div className="subscribetonewsletterjoin"><button className="joinbutton">Join</button></div>
+      </div>
+    </div>
     </>
   );
 };
