@@ -41,8 +41,8 @@ const Section7 = () => {
         <label for="vehicle1" className="policy">Accept all Terms and Conditions</label><br></br>
         <input type="checkbox" className="termsandcondition"  name="policy" value=""/>
         <label for="vehicle2" className="policy"> Accept all Privacy and Policy</label> */}
-        <label class="main">Accept all Terms and Conditions<input type="checkbox"/><span class="geekmark"></span></label>
-        <label class="main">Accept all Privacy and Policy<input type="checkbox"/><span class="geekmark"></span></label>
+        <label className="main">Accept all Terms and Conditions<input type="checkbox"/><span className="geekmark"></span></label>
+        <label className="main">Accept all Privacy and Policy<input type="checkbox"/><span className="geekmark"></span></label>
       </div>
       <div className="subscribetonewsletterjoin"><button className="joinbutton">Join</button></div>
       </div>
