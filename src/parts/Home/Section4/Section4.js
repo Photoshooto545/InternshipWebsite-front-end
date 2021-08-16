@@ -1,90 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Carousel from "react-elastic-carousel";
 
-import "./Section4.css";
+import styles from "./Section4.module.css";
+// import globalStyles from "../../../assets/global-styles/bootstrap.min.module.css";
+// import cx from "classnames";
 
 import img1 from "./img/1st.jpeg";
+import HomeBlogs from "../../../utils/HomeBlogs.json";
+import HomeBlogsCard from "../../../components/HomeBlogsCard/HomeBlogsCard";
+
+const breakPoints = [
+  { width: 1, itemsToShow: 1 },
+  { width: 500, itemsToShow: 2, itemsToScroll: 1 },
+  { width: 768, itemsToShow: 3, itemsToScroll: 2 },
+  { width: 1200, itemsToShow: 4, itemsToScroll: 3 },
+];
 
 const Section4 = () => {
   return (
-    <section className="homeSection4">
-      <h1 className="homeSection4Title">Blogs</h1>
-      <p className="homeSection4Desc">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut dolorem
-        doloribus tenetur distinctio quaerat quam dolores fuga, provident alias
-        autem?
-      </p>
-
-      <div className="homeBlogsCardContainer ">
-        <div className="homeBlogsCard">
-          <div className="homeBlogCardImg ">
-            <img src={img1} alt="blogImg" className="homeBlogImg" />
-            <div className="homeBlogImgDots top"></div>
-            <div className="homeBlogImgDots right"></div>
-            <div className="homeBlogImgDots bottom"></div>
-            <div className="homeBlogImgDots left"></div>
-          </div>
-          <div className="homeBlogCardInfo">
-            <p className="homeBlogCardInfoPara">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              voluptas minima, veritatis assumenda harum aperiam?
-            </p>
-            <Link to="#" className="homeBlogCardLink">
-              Read More
-            </Link>
-          </div>
-        </div>
-
-        <div className="homeBlogsCard">
-          <div className="homeBlogCardImg ">
-            <img src={img1} alt="blogImg" className="homeBlogImg" />
-            <div className="homeBlogImgDots top"></div>
-            <div className="homeBlogImgDots right"></div>
-            <div className="homeBlogImgDots bottom"></div>
-            <div className="homeBlogImgDots left"></div>
-          </div>
-          <div className="homeBlogCardInfo">
-            <p className="homeBlogCardInfoPara">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              voluptas minima, veritatis assumenda harum aperiam?
-            </p>
-            <Link to="#" className="homeBlogCardLink">
-              Read More
-            </Link>
-          </div>
-        </div>
-
-        <div className="homeBlogsCard">
-          <div className="homeBlogCardImg ">
-            <img src={img1} alt="blogImg" className="homeBlogImg" />
-            <div className="homeBlogImgDots top"></div>
-            <div className="homeBlogImgDots right"></div>
-            <div className="homeBlogImgDots bottom"></div>
-            <div className="homeBlogImgDots left"></div>
-          </div>
-          <div className="homeBlogCardInfo">
-            <p className="homeBlogCardInfoPara">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              voluptas minima, veritatis assumenda harum aperiam?
-            </p>
-            <Link to="#" className="homeBlogCardLink">
-              Read More
-            </Link>
-          </div>
-        </div>
-        <input type="radio" name="dot" id="two" />
-        <input type="radio" name="dot" id="three" />
-        <input type="radio" name="dot" id="four" />
-        <input type="radio" name="dot" id="five" />
-      </div>
-
-      <div class="Button">
-        <i class="fa fa-chevron-circle-left"></i>
-        <label for="two" class="active two"></label>
-        <label for="three" class="three"></label>
-        <label for="four" class="four"></label>
-        <label for="five" class="five"></label>
-        <i class="fa fa-chevron-circle-right"></i>
+    <section className={styles.homeBlogsContainer}>
+      <h1 className={styles.heading}>Blogs</h1>
+      <h3 className={styles.subHeading}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, rerum!
+      </h3>
+      <div className={styles.blogsCardContainer}>
+        <Carousel breakPoints={breakPoints}>
+          {HomeBlogs.map((HomeBlog) => (
+            <HomeBlogsCard key={HomeBlog.id} blogData={HomeBlog} />
+          ))}
+        </Carousel>
       </div>
     </section>
   );

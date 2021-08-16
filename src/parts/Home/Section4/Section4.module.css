@@ -1,0 +1,31 @@
+.homeBlogsContainer {
+  margin: 10px 0;
+  width: 100%;
+  background: #005a8c;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+}
+.subHeading {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+.blogsCardContainer {
+  /* background: lightgrey; */
+  width: 100%;
+  padding: 5px 20px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}

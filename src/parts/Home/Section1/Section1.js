@@ -1,8 +1,8 @@
 import React from "react";
 
 import styles from "./Section1.module.css";
-import globalStyles from "../../../assets/global-styles/bootstrap.min.module.css";
-import cx from "classnames";
+// import globalStyles from "../../../assets/global-styles/bootstrap.min.module.css";
+// import cx from "classnames";
 
 import camGalImg from "../../../assets/images/camGal.jpeg";
 
