@@ -1,17 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "./Section2.css";
+import styles from "./Section2.module.css";
+// import globalStyles from "../../../assets/global-styles/bootstrap.min.module.css";
+// import cx from "classnames";
+
+// import "./Section2.css";
 import lappyImg from "../../../assets/images/lappy.png";
 
 const Section2 = () => {
   return (
-    <section className="homeSection2">
-      <div className="section2Row">
-        <div className="section2Col">
+    <section className={styles.homeSection2}>
+      <div className={styles.section2Row}>
+        <div className={styles.section2Col}>
           <img src={lappyImg} alt="img" />
         </div>
-        <div className="section2Col">
+        <div className={styles.section2Col}>
           <h1>What is the internship program?</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas

@@ -1,6 +1,10 @@
 import React from "react";
 
-import "./Section7.css";
+import styles from "./Section7.module.css";
+// import globalStyles from "../../../assets/global-styles/bootstrap.min.module.css";
+// import cx from "classnames";
+
+// import "./Section7.css";
 
 const Section7 = () => {
   return (

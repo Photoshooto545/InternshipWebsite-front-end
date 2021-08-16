@@ -16,10 +16,16 @@
   padding: 50px;
 }
 .homeSec1Info h1 {
+  color: black;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56.25px;
 }
 
 .homeSec1Info p {
   margin: 20px 0;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .homeSec1BtnContainer {
@@ -33,6 +39,8 @@
   transform: skew(-25deg);
   font-weight: bold;
   color: white;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .homeSec1Design {

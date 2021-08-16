@@ -1,6 +1,10 @@
 import React from "react";
 
-import "./Section6.css";
+import styles from "./Section6.module.css";
+// import globalStyles from "../../../assets/global-styles/bootstrap.min.module.css";
+// import cx from "classnames";
+
+// import "./Section6.css";
 import mobImg from "./img/pho.png";
 import gpImg from "./img/gp.png";
 

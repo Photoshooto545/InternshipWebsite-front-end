@@ -1,0 +1,26 @@
+.homeTestimonyContainer {
+  margin: 10px 0;
+  width: 100%;
+  background: #fff;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #015888;
+}
+
+.testimonyCardContainer {
+  /* background: lightgrey; */
+  width: 100%;
+  padding: 5px 20px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}

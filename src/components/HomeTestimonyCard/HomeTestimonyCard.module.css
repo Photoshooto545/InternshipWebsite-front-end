@@ -1,0 +1,50 @@
+.testimonyCard {
+  background: #005a8c;
+  border-radius: 29px;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  margin: 0 15px;
+  padding: 20px;
+}
+
+.personInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.personInfo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
+
+.namePost {
+  width: 50%;
+}
+
+.testimonyName {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #ffffff;
+}
+
+.testimonyJobPost {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #ffffff;
+}
+
+.testimonyMsg {
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #ffffff;
+}
