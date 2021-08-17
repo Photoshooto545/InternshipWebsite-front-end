@@ -1,38 +1,31 @@
 import React from "react";
-
-import styles from "./Section6.module.css";
-// import globalStyles from "../../../assets/global-styles/bootstrap.min.module.css";
-// import cx from "classnames";
-
 // import "./Section6.css";
-import mobImg from "./img/pho.png";
-import gpImg from "./img/gp.png";
+import styles from "./Section6.module.css";
+import mobImg from "./img/phoneimg.png";
+import gpImg from "./img/logo.png";
+import playstore from "./img/playstore.png";
 
 const Section6 = () => {
   return (
-    <section class="homeSection6">
-      <div class="homeSection6Container">
-        <div class="homeSection6Row">
-          <div class="homeSection6Col">
-            <div class="mobile-view">
-              <img data-tilt src={mobImg} alt="mobile" />
-            </div>
+      <div className={styles.homeSection6Container}>
+          <div className={styles.homeSection6Col}>
+              <img className={styles.mobileimage} data-tilt src={mobImg} alt="mobile" />
+              <img className={styles.logoimageinsidethephone} data-tilt src={gpImg} alt="mobile" />
           </div>
-          <div class="col download-link-box">
-            <div class="detail-view">
-              <h3>Download Our App</h3>
-              <p>
+          <div className={styles.downloadlinkbox}>
+            <div className={styles.detailview}>
+              <h3 className={styles.downloadappheading}>Download Our App</h3>
+              <p className={styles.downloadapplines}>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna
               </p>
-              <div class="download-app">
-                <img data-tilt src={gpImg} alt="" />
+              <div className={styles.downloadapp}>
+                <img className={styles.googleplayestoreimage} data-tilt src={playstore} alt="" />
+                <h4 className={styles.googleplay}>Google Play</h4>
               </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
+    </div>
   );
 };
 

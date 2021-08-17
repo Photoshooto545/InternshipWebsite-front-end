@@ -1,46 +1,89 @@
-.download {
-  height: 800px;
-  overflow: hidden;
+.homeSection6Container{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
 }
-.download-img {
-  height: 50%;
+.homeSection6Col{
+  width: 50%;
+  height: 400px;
+  position: relative;
 }
-.download-img img {
-  height: 100%;
+.downloadappheading{
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 42px;
+color: #000000;
 }
+.downloadapplines{
+  padding-top: 15px;
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+color: #000000;
+}
+.downloadapp{
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  width: 288px;
+   height: 66px;
+  background: #000000;
+border-radius: 3px;
+}
+.googleplay{
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 42px;
 
-.d-app {
-  height: 50%;
+color: #FFFFFF;
+margin-left: 5px;
 }
-.download .d-app .downloadapp {
-  background: #f9f9f9;
-  height: 100%;
-  color: #222;
-  padding: 40px;
+.detailview{
+  margin-left: 10%;
+  width: fit-content;
 }
+.downloadlinkbox{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.download .d-app b {
-  font-size: 2rem;
-  text-align: right;
 }
-.download .d-app p {
-  text-align: justify;
-  text-indent: 25px;
-  margin-top: 25px;
-  font-size: 0.9rem;
+.mobileimage{
+  position: absolute;
+  top: 0;
+  left: 30%;
+  width: 60%;
+height: 100%;
 }
-
-.download-section {
-  background: #f9f9f9;
+.homeSection6Col::before{
+  content: "";
+  position: absolute;
+  top: 13.5%;
+  left: 49.5%;
+  width: 21%;
+  height: 75%;
+  z-index: 10;
+  background: #F2F2F2;
+border: 1px solid #F0F0F0;
+box-sizing: border-box;
+border-radius: 9px;
 }
-.detail-view {
-  text-align: justify;
-  max-width: 350px;
-  margin: 2em auto;
+.logoimageinsidethephone{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  width: 20%;
+  z-index: 11;
 }
-.detail-view h3 {
-  font-weight: 600;
-}
-.download-app {
-  text-align: center;
+.googleplayestoreimage{
+  width: 54px;
+  height: 54px;
 }

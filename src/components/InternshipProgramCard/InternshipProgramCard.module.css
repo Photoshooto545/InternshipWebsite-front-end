@@ -39,7 +39,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border-top: 2px solid black;
+  border-top: 2px solid #CACACA;
 }
 .programDuration {
   width: 100%;
@@ -49,12 +49,14 @@
   line-height: 16px;
   color: #8f8f8f;
   /* background: red; */
+  border-right: 2px solid #CACACA;
+
   padding: 5% 0;
 }
 .programKnowMore {
   width: 100%;
   /* background: red; */
-  border-left: 2px solid black;
+  /* border-left: 2px solid black; */
   text-align: center;
 }
 
