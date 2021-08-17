@@ -55,8 +55,9 @@ const Footer = () => {
           </li>
         </ul>
 
-        <div class="footer">
-          <p>Copyright Photoshooto internship 2020-21</p>
+        <div class="footer footertext">
+          <h2 class="copyrightsymbol">&copy;</h2> 
+          <p claas="footerheading"> Copyright Photoshooto internship 2020-21</p>
         </div>
       </footer>
     </div>
