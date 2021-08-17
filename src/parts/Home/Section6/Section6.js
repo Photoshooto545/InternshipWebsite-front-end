@@ -1,18 +1,15 @@
 import React from "react";
-
 import "./Section6.css";
 import mobImg from "./img/phoneimg.png";
-import gpImg from "./img/gp.png";
+import gpImg from "./img/logo.png";
 import playstore from "./img/playstore.png";
-
 
 const Section6 = () => {
   return (
       <div className="homeSection6Container">
           <div className="homeSection6Col">
-            <div className="mobile-view">
               <img className="mobileimage" data-tilt src={mobImg} alt="mobile" />
-            </div>
+              <img className="logoimageinsidethephone" data-tilt src={gpImg} alt="mobile" />
           </div>
           <div className="col download-link-box">
             <div className="detail-view">
@@ -22,7 +19,6 @@ const Section6 = () => {
                 eiusmod tempor incididunt ut labore et dolore magna
               </p>
               <div className="download-app">
-                {/* <img className="googleplayestoreimage" data-tilt src={gpImg} alt="" /> */}
                 <img className="googleplayestoreimage" data-tilt src={playstore} alt="" />
                 <h4 className="googleplay">Google Play</h4>
               </div>
