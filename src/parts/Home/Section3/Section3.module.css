@@ -31,6 +31,9 @@
   justify-content: center; */
 }
 
+.rec-arrow{
+  background-color: yellow;
+}
 button.rec-dot {
   background-color: rgb(255, 255, 255);
   box-shadow: 0 0 1px 3px rgba(255, 255, 255, 0.5);

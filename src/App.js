@@ -8,6 +8,7 @@ import HomePage from "./Pages/Home/HomePage";
 import ProgramsPage from "./Pages/Programs/ProgramsPage";
 import AboutPage from "./Pages/About/AboutPage";
 import ContactPage from "./Pages/Contact/ContactPage";
+import BlogPage from "./Pages/Blog/BlogPage";
 import LoginPage from "./Pages/Login/LoginPage";
 import SignupPage from "./Pages/SignUp/SignupPage";
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/programs" component={ProgramsPage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/contact" component={ContactPage} />
+        <Route path="/blog" component={BlogPage} />
         <Route path="/login" component={LoginPage} />
         <Route path="/signup" component={SignupPage} />
         <Route component={NotfoundPage} />
