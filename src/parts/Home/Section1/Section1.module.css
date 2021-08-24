@@ -50,11 +50,12 @@
   justify-content: center;
 }
 .rightRectangle {
-  background: rgb(115, 115, 115);
+  /* background: rgb(115, 115, 115); */
   width: 25vw;
   height: 70%;
   position: absolute;
   top: 0;
+  display:none;
   right: 0;
   z-index: -1;
 }
