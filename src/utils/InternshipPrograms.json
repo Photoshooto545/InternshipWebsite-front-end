@@ -5,7 +5,7 @@
     "title": "UI/UX Designing",
     "info": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, dolorem?",
     "duration": "2 Months",
-    "link": "google.com"
+    "link": "ui-ux-designing"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "title": "Web Development",
     "info": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, dolorem?",
     "duration": "2 Months",
-    "link": "facebook.com"
+    "link": "web-development"
   },
   {
     "id": 3,

@@ -18,7 +18,7 @@ const InternshipProgramCard = ({
       <div className={styles.cardLink}>
         <div className={styles.programDuration}>Duration:{duration}</div>
         <div className={styles.programKnowMore}>
-          <Link to={link}>Know More</Link>
+          <Link to={`/programs/${link}`}>Know More</Link>
         </div>
       </div>
     </div>
