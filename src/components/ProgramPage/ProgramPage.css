@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 .programPageContainer {
   width: 100%;
@@ -83,8 +85,13 @@
 }
 
 .workfromhomecontainer {
+  margin-bottom: 57px;
   display: flex;
   flex-direction: column;
+  background: #f1f1f1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 20px 10px;
 }
 
 .workfromhome1 {
@@ -203,26 +210,59 @@
   display: flex;
   justify-content: center;
 }
-.aboutinternshipinnerbox {
-  background: #b1d9e3;
+.aboutinternshipinnerbox{
+  background: #B1D9E3;
   box-shadow: 3px 6px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  padding: 1rem 2rem;
-  margin-right: 3rem;
+  padding: 20px 40px;
+  padding-bottom: 30px;
 }
-.statusheading {
+.statusheading{
   font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 1.7rem;
-  color: #000000;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+color: #000000;
 }
-.statusline1 {
+.statusline1{
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+color: #000000;  
+}
+
+.numberofopening{
+  display: flex;
+  align-items: center;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
+  font-size: 30px;
   color: #000000;
   margin-top: 10px;
+}
+.numberofopening1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+padding: 0px 5px;
+color: #FFFFFF;
+  margin-right: 5px;
+background: #636363;
+border-radius: 4px;
+}
+
+.numberofopening2{
+margin-left: 5px;
+}
+
+.numberofopening3{
+margin-left: 5px;
 }
 
 /* ------------------------Section 3, Skills Required--------------------------- */
@@ -249,6 +289,9 @@
   padding: 1rem;
   font-size: 1.2rem;
   font-weight: bold;
+}
+.skills-mini img {
+  border-radius: 2em;
 }
 
 /* -------------------------Section 4 containing Perks----------------------------*/
@@ -306,13 +349,20 @@
   font-size: 2rem;
   color: #003654;
   line-height: 2.8rem;
+  text-align: center;
 }
 
 .function-mini {
   display: flex;
   justify-content: space-evenly;
   margin: 0rem 6rem;
-  padding: 3rem;
+  padding: 4rem;
+}
+.p-info {
+  min-width: 140px;
+  top: 65px !important;
+  right: -60px !important;
+  color: #000 !important;
 }
 
 .function-mini div {
@@ -344,6 +394,7 @@
   font-weight: 900;
   color: #003654;
   font-size: 2rem;
+  text-align: center;
 }
 
 .values-mini {
@@ -364,6 +415,9 @@
   position: absolute;
   top: 14%;
   right: 25%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
 }
 
 .value-div h5 {
@@ -376,7 +430,7 @@
 
 /* ---------------------------Section 7 containing Certificate--------------------- */
 .certificate {
-  background-color: #f3f3f3;
+  background-color: #f8f8f8;
   border-radius: 0.7rem;
   margin: 0rem 0.8rem 3rem 0.8rem;
   height: auto;
@@ -388,6 +442,7 @@
   color: #003654;
   font-size: 2rem;
   padding-top: 1.3rem;
+  text-align: center;
 }
 
 .certificate-mini {
@@ -408,15 +463,20 @@
 }
 
 .certificate-right {
-  background-image: url(../../assets/images/img/certificate.png);
-  background-size: 100% 100%;
+  /* background-image: url(../../assets/images/img/certificate.png); */
+  /* background-size: 100% 100%;
   height: 15rem;
   flex-basis: 40%;
-  margin-right: 1rem;
+  margin-right: 1rem; */
+  width: 100%;
+  text-align: right;
+}
+.certificate-right img {
+  box-shadow: 1px 3px 12px 3px rgb(77 77 156 / 20%);
 }
 
 /* ------------------------------Section 8 containing Reviews---------------------- */
-.reviews {
+/* .reviews {
   margin: 3rem;
   font-size: 0.9rem;
 }
@@ -438,13 +498,17 @@
   box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0.5rem;
   margin: 0rem 1rem 0rem 1rem;
+  height: 12em;
 }
 
 .reviewer {
   padding: 0.3rem 1rem;
   display: flex;
+  height: 35%;
 }
-
+.reviewer img{
+  border-radius: 5px;
+}
 .reviewer p {
   align-self: center;
   margin-left: 0.7rem;
@@ -464,4 +528,79 @@
   border-radius: 1.5rem;
   margin: auto;
   background: linear-gradient(180deg, #089baf 0%, #005a8c 100%);
+} */
+
+.reviews {
+  margin: 4%;
+  font-size: 0.9rem;
+  
+}
+
+.reviews h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  /* text-align: center; */
+  /* color: #005A8C; */
+  
+margin-bottom: 40px;
+}
+
+.reviewsmini {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.reviewscard {
+  box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+  margin: 0rem 1rem 0rem 1rem;
+}
+
+.reviewer {
+  padding: 0.3rem 1rem;
+  display: flex;
+}
+.reviewimage{
+    width: 47px;
+    height: 40px;
+    border-radius: 5px;
+}
+.starsinreviewsinprograms{
+  display: flex;
+  margin-left: 5px;
+}
+
+.reviewer h3 {
+  align-self: center;
+  margin-left: 0.7rem;
+  font-weight: 900;
+}
+.reviewername{
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+color: #000000;
+}
+.reviewparagraph {
+  padding: 0.3rem 1rem;
+}
+.outerofnameandstars{
+  width: 70%;
+}
+
+.apply-now-btn {
+  width: 8rem;
+  font-weight: 900;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 1.5rem;
+  margin: auto;
+  background: linear-gradient(180deg, #089baf 0%, #005a8c 100%);
+  cursor: pointer;
 }
