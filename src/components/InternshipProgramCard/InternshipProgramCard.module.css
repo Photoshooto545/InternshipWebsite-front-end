@@ -4,15 +4,20 @@
   /* background: darkgray; */
   width: 300px;
   display: flex;
+  height: auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0 15px;
 }
-.programsCard img {
-  /* width: 100%; */
-  width: 80%;
-  margin: 5% 0;
+.programsCard .imgDiv {
+  padding: 1.6rem 1.6rem 1rem 1.6rem;
+  width: 100%;
+  height: 14rem;
+}
+
+.programsCard .imgDiv img {
+  width: 100%;
 }
 .programTitle {
   font-weight: bold;

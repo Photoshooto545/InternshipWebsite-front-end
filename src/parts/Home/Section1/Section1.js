@@ -23,7 +23,7 @@ const Section1 = () => {
         </div>
       </div>
       <div className={styles.homeSec1Design}>
-        <div className={styles.rightRectangle}></div>
+        {/* <div className={styles.rightRectangle}></div> */}
         <div className={styles.leftRectangle}></div>
         <img src={camGalImg} alt="img" className={styles.camGalImg} />
       </div>

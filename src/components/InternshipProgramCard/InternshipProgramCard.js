@@ -1,18 +1,20 @@
-import React from "react";
+import React from 'react';
 
-import styles from "./InternshipProgramCard.module.css";
+import styles from './InternshipProgramCard.module.css';
 // import globalStyles from "../../../assets/global-styles/bootstrap.min.module.css";
 // import cx from "classnames";
 
-import card1 from "../../assets/images/img/card1.png";
-import { Link } from "react-router-dom";
+import card1 from '../../assets/images/img/card1.png';
+import { Link } from 'react-router-dom';
 
 const InternshipProgramCard = ({
   programData: { id, img, title, info, duration, link },
 }) => {
   return (
     <div className={styles.programsCard}>
-      <img src={img} alt="programImg" />
+      <div className={styles.imgDiv}>
+        <img src={img} alt="programImg" />
+      </div>
       <div className={styles.programTitle}>{title}</div>
       <div className={styles.programInfo}>{info}</div>
       <div className={styles.cardLink}>
