@@ -14,6 +14,9 @@ import Prototype from "../../assets/images/img/prototype.png";
 import DownRectangle from "../../assets/images/img/down.png";
 import Team from "../../assets/images/img/team.png";
 import Man from "../../assets/images/img/man.png";
+import certificate from "../../assets/images/img/certificate.png";
+import images from "./image/25533.jpg";
+
 
 import ProgramsPageData from "../../utils/ProgramsPageData.json";
 
@@ -136,16 +139,10 @@ const ProgramPage = () => {
                 </ul>
               </div>
               <div className="aboutinternshipinnerbox">
-                <h4 className="statusheading">Status</h4>
-                <h5 className="statusline1">
-                  Number of Openings :
-                  {program.aboutInternship.status.noOfOpenings}
-                </h5>
-                <h5 className="statusline1">
-                  Candidate Applied :
-                  {program.aboutInternship.status.candidatesApplied}
-                </h5>
-              </div>
+                      <h4 className="statusheading">Status</h4>
+                      <div className="numberofopening"><h5 className="statusline1">Number of Openings : </h5><div className="numberofopening1 numberofopening2">{program.aboutInternship.status.noOfOpenings}</div></div>
+                      <div className="numberofopening"><h5 className="statusline1">Candidate Applied : </h5><div className="numberofopening1 numberofopening3">{program.aboutInternship.status.candidatesApplied}</div></div>
+                    </div>
             </div>
           </div>
         </div>
@@ -207,21 +204,25 @@ const ProgramPage = () => {
           <div>
             <img src={DownRectangle} />
             <p>1</p>
+            <p className="p-info">Interview</p>
           </div>
           <div className="dotted-line"></div>
           <div>
             <img src={DownRectangle} />
             <p>2</p>
+            <p className="p-info">Offer letter</p>
           </div>
           <div className="dotted-line"></div>
           <div>
             <img src={DownRectangle} />
             <p>3</p>
+            <p className="p-info">Work with us</p>
           </div>
           <div className="dotted-line"></div>
           <div>
             <img src={DownRectangle} />
             <p>4</p>
+            <p className="p-info">Get Certificate</p>
           </div>
         </div>
       </div>
@@ -266,12 +267,15 @@ const ProgramPage = () => {
               amet,consectetur Lorem ipsum dolor sit amet, consectetur
             </p>
           </div>
-          <div className="certificate-right"></div>
+          <div className="certificate-right">
+            <img src={certificate} alt="" />
+          </div>
         </div>
       </div>
 
       {/* Section 8 containing Reviews----------------------------------------- */}
-      <div className="reviews">
+
+      {/* <div className="reviews">
         <h1>Reviews</h1>
         <div className="reviews-mini">
           {program.reviews.map((review) => (
@@ -285,7 +289,36 @@ const ProgramPage = () => {
               </div>
             </div>
           ))}
-
+ </div> */}
+   <div className="reviews">
+        <h1>Reviews</h1>
+        <div className="reviewsmini">
+          {program.reviews.map((review) => (
+            
+           <div className="reviewscard">
+              <div className="reviewer">
+                <img className="reviewimage" src={review.img} alt="Reviewer"/>
+                <div className="outerofnameandstars">
+                <h3 className="reviewername">{review.name}</h3>
+                <div className="starsinreviewsinprograms">
+                {
+                  Array.from(Array(review.start),(e,i)=>{
+                    return  <img className="reviewstarimage" src={images} alt="" srcset="" width="18px" height="18px" />
+                  })
+                }
+                </div>
+                </div>
+                <div className="reviewtime">{review.date}</div>
+              </div>
+              <div className="reviewparagraph">
+                <p>{review.message} </p>
+              </div>
+            </div>
+          
+          ))}
+          </div>
+          <div className="apply-now-btn">Apply</div>
+          </div>
           {/* 
           <div className="reviews-card">
             <div className="reviewer">
@@ -327,11 +360,11 @@ const ProgramPage = () => {
             </div>
           </div>
  */}
-        </div>
+       
 
-        <div className="apply-now-btn">Apply</div>
+        
       </div>
-    </div>
+    // </div>
   );
 };
 
