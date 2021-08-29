@@ -1,0 +1,31 @@
+.BlogBlogContainer{
+    display: flex;
+    margin: 27px 37px 0px 48px;
+    height:fit-content;
+    flex-direction: row;
+}
+
+.blogbox1{
+    width: 61%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.blogbox2{
+    width: 39%;
+    /* border: 1px solid black; */
+}
+@media screen and (max-width: 1125px){
+    .blogbox1{
+        width: fit-content;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card{
+        margin-right: 0px;
+    }
+}
