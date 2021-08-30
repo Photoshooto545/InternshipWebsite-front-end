@@ -2,16 +2,30 @@
 .card{
     position:relative;
     overflow: hidden;
-    width: 356px;
-    height: 414px;
+    width: 45%;
+    height: 24%;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-right: 28px;
     margin-bottom: 36px;
 }
+@media screen and (max-width: 1020px){
+.card{
+    width: 80%;
+    margin-right: 0px;
+}
+}
 .image{
-    
-    margin:16px 13px 0px 14px;
+    /* margin:16px 13px 0px 14px; */
+    width: 90%;
+    padding-top: 4%;
+    margin: auto;
+}
+.image img{
+    /* width:329px;
+    height:190px;
+     */
+     width: 100%;
 }
 
 .status{
@@ -36,7 +50,7 @@ li {
     margin-right: 4px;
   }
 .type{
-    margin-right: 73px;
+    width: 50%;
 }
 .readtime::before {
     content: "\2022";
@@ -75,13 +89,14 @@ li {
 .data{
     margin: 13px 40px 5px 31px;
     display: flex;
+    justify-content: space-between;
 }
-.like{
+/* .like{
     margin-right: 109px;
 }
 .comment{
     margin-right: 109px;
-}
+} */
 .text{
     margin-top: 7px;
     text-align: center;

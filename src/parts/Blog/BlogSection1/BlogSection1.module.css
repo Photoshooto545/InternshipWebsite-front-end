@@ -70,3 +70,24 @@ color: rgba(0, 90, 140, 0.57);
 .carousel-indicators button {
   background-color: darkgray; 
 }
+
+.popular{
+  position: absolute;
+  background: rgba(0, 90, 140, 0.88);
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  margin-left: 88%;
+  margin-top: 3%;
+  padding: 2px 2px 2px 2px;
+  z-index: 1;
+  width: 103px;
+  height: 39px;
+  padding-top: 8px;
+}
+.plink{
+  color: #F3F2F2 !important;
+  text-decoration: none !important;
+}
