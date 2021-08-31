@@ -7,6 +7,7 @@ import ProgramsPage from "./Pages/Programs/ProgramsPage";
 import ProgramPage from "./components/ProgramPage/ProgramPage";
 import AboutPage from "./Pages/About/AboutPage";
 import ContactPage from "./Pages/Contact/ContactPage";
+import BlogPage from "./Pages/Blog/BlogPage";
 import LoginPage from "./Pages/Login/LoginPage";
 import SignupPage from "./Pages/SignUp/SignupPage";
 import NotfoundPage from "./Pages/NotfoundPage/NotfoundPage";
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/programs" component={ProgramsPage} />
         <Route exact exact path="/programs/:progName" component={ProgramPage} />
         <Route exact path="/about" component={AboutPage} />
+        <Route path="/blog" component={BlogPage} />
         <Route exact path="/contact" component={ContactPage} />
         <Route exact path="/login" component={LoginPage} />
         <Route exact path="/signup" component={SignupPage} />
