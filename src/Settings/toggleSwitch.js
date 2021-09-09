@@ -32,21 +32,6 @@ class SwitchExample extends Component {
                 />
             );
         }
-        // } else {
-        //     return (
-        //         <Switch className="react-switch-disabled"
-        //             offColor="#005A8C"
-        //             offHandleColor="#005A8C"
-        //             onHandleColor="#005A8C"
-        //             handleDiameter={1}
-        //             uncheckedIcon={false}
-        //             checkedIcon={false}
-        //             boxShadow="0px 1px 5px rgba(0, 0, 0, 0.6)"
-        //             activeBoxShadow="0px 0px 1px 10px rgba(0, 0, 0, 0.2)"
-        //             height={35}
-        //             width={77} />
-        //     )
-        // }
     }
 }
 
