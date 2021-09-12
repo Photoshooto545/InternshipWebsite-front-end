@@ -1,0 +1,90 @@
+.BlogBlogContainer{
+    display: flex;
+    margin: 27px 37px 0px 48px;
+    height:fit-content;
+    flex-direction: row;
+}
+
+.blogbox1{
+    width: 61%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+.blogbox2{
+    width: 39%;
+    background: #F7F6F6;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+}
+@media screen and (max-width: 1020px){
+    .blogbox1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 50%;
+    }
+    .blogbox2{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+}
+.btnsec {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #f7f6f6;
+  }
+
+  .btn1 {
+    width: 50%;
+    height: 50px;
+    border-radius: 13px 0 0 0;
+    border:0px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #005a8c;
+    border-right: 1px solid;
+  }
+  
+  .btn2 {
+    width: 50%;
+    height: 50px;
+    border-radius: 0 13px 0 0;
+    border: 0px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #005a8c;
+  }
+  .morebtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .btn3 {
+    background: rgba(0, 90, 140, 0.92);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 10px;
+    width: 114.74px;
+    height: 36.68px;
+    display: flex;
+    border: 1px;
+    color: #f3f2f2;
+    justify-content: center;
+    align-items: center;
+  }
+  

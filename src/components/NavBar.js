@@ -2,10 +2,12 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
 import logo from "../assets/images/logo.png";
+
 import "./NavBar.css";
 
 const NavBar = () => {
   return (
+    <>
     <nav className="navContainer">
       <div className="logo">
         <Link to="/">
@@ -22,6 +24,9 @@ const NavBar = () => {
         <NavLink activeClassName="active" to="/about">
           About
         </NavLink>
+        <NavLink activeClassName="active" to="/blog">
+          Blog
+        </NavLink>
         <NavLink activeClassName="active" to="/contact">
           Contact
         </NavLink>
@@ -34,7 +39,9 @@ const NavBar = () => {
           Create New Account?
         </NavLink>
       </div>
+      
     </nav>
+</>
   );
 };
 
