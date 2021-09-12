@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./ContactPage.css";
 
 const ContactPage = () => {
@@ -7,3 +6,5 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
+
+

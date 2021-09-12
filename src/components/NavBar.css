@@ -12,7 +12,7 @@
   justify-content: space-between;
   font-family: "Roboto", sans-serif;
   font-size: 0.9rem;
-  position: absolute;
+  /* position: absolute; */
   z-index: 100;
   background: none;
 }
