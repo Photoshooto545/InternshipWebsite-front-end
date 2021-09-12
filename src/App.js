@@ -11,22 +11,24 @@ import BlogPage from "./Pages/Blog/BlogPage";
 import LoginPage from "./Pages/Login/LoginPage";
 import SignupPage from "./Pages/SignUp/SignupPage";
 import NotfoundPage from "./Pages/NotfoundPage/NotfoundPage";
+import intern_info from "./Pages/intern_info/Intern_info";
 function App() {
   return (
     <Router>
       <NavBar />
-       <Switch>
+      <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/programs" component={ProgramsPage} />
         <Route exact exact path="/programs/:progName" component={ProgramPage} />
         <Route exact path="/about" component={AboutPage} />
+        <Route exact path="/intern_info" component={intern_info} />
         <Route path="/blog" component={BlogPage} />
         <Route exact path="/contact" component={ContactPage} />
         <Route exact path="/login" component={LoginPage} />
         <Route exact path="/signup" component={SignupPage} />
         <Route component={NotfoundPage} />
-       </Switch>
-      <Footer/>
+      </Switch>
+      <Footer />
     </Router>
   );
 }
