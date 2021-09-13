@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from "./ProgramSection2.module.css";
 import InternshipPrograms from "../../../utils/InternshipPrograms.json";
-import Intern_info from "../../../Pages/intern_info/Intern_info"
-import { Link } from "react-router-dom";
+import Intern_info from "../../../Pages/intern_info/Intern_info";
+import Link from 'react-router-dom/Link';
 
 const ProgramSection2 = () => {
   return (

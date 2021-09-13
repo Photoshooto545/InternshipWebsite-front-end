@@ -8,9 +8,7 @@ const Popup = props => {
     return (
         <div className="popup-box">
             <div className="box">
-                {/* <div> */}
                 <span className="close-icon" onClick={props.handleClose}><FontAwesomeIcon icon={faTimes} size="lg" /></span>
-                {/* <img src={Certificate} alt="" /> */}
                 <ImageSlider />
             </div>
         </div>

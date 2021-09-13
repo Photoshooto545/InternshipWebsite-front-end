@@ -276,12 +276,10 @@ const ProgramPage = () => {
           </div>
           <div className="certificate-right">
             <img onClick={togglePopup} src={certificate} alt="" />
-            {/* {isOpen && <Popup handleClose={togglePopup} />} */}
+            {isOpen && <Popup handleClose={togglePopup} />}
           </div>
         </div>
       </div>
-      {isOpen && <Popup handleClose={togglePopup} />}
-
 
       {/* Section 8 containing Reviews----------------------------------------- */}
 
