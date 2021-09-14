@@ -1,7 +1,9 @@
 import React from 'react'
 import styles from "./ProgramSection2.module.css";
 import InternshipPrograms from "../../../utils/InternshipPrograms.json";
+
 import { Link } from "react-router-dom";
+
 
 const ProgramSection2 = () => {
   return (

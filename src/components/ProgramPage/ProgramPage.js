@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 
 import "./ProgramPage.css";
@@ -16,7 +16,7 @@ import Team from "../../assets/images/img/team.png";
 import Man from "../../assets/images/img/man.png";
 import certificate from "../../assets/images/img/certificate.png";
 import images from "./image/25533.jpg";
-
+import Popup from '../../Certificate Popup/Popup.js';
 
 import ProgramsPageData from "../../utils/ProgramsPageData.json";
 
@@ -27,6 +27,13 @@ const ProgramPage = () => {
   let program = ProgramsPageData.find((prog) => prog.dept == progName);
   //   console.log(program.title);
   //   console.log(program.skillsRequired);
+
+
+  /* Certificate Modal */
+  const [isOpen, setIsOpen] = useState(false);
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  }
 
   return (
     <div className="programPageContainer">
@@ -139,10 +146,10 @@ const ProgramPage = () => {
                 </ul>
               </div>
               <div className="aboutinternshipinnerbox">
-                      <h4 className="statusheading">Status</h4>
-                      <div className="numberofopening"><h5 className="statusline1">Number of Openings : </h5><div className="numberofopening1 numberofopening2">{program.aboutInternship.status.noOfOpenings}</div></div>
-                      <div className="numberofopening"><h5 className="statusline1">Candidate Applied : </h5><div className="numberofopening1 numberofopening3">{program.aboutInternship.status.candidatesApplied}</div></div>
-                    </div>
+                <h4 className="statusheading">Status</h4>
+                <div className="numberofopening"><h5 className="statusline1">Number of Openings : </h5><div className="numberofopening1 numberofopening2">{program.aboutInternship.status.noOfOpenings}</div></div>
+                <div className="numberofopening"><h5 className="statusline1">Candidate Applied : </h5><div className="numberofopening1 numberofopening3">{program.aboutInternship.status.candidatesApplied}</div></div>
+              </div>
             </div>
           </div>
         </div>
@@ -268,7 +275,8 @@ const ProgramPage = () => {
             </p>
           </div>
           <div className="certificate-right">
-            <img src={certificate} alt="" />
+            <img onClick={togglePopup} src={certificate} alt="" />
+            {isOpen && <Popup handleClose={togglePopup} />}
           </div>
         </div>
       </div>
@@ -290,23 +298,23 @@ const ProgramPage = () => {
             </div>
           ))}
  </div> */}
-   <div className="reviews">
+      <div className="reviews">
         <h1>Reviews</h1>
         <div className="reviewsmini">
           {program.reviews.map((review) => (
-            
-           <div className="reviewscard">
+
+            <div className="reviewscard">
               <div className="reviewer">
-                <img className="reviewimage" src={review.img} alt="Reviewer"/>
+                <img className="reviewimage" src={review.img} alt="Reviewer" />
                 <div className="outerofnameandstars">
-                <h3 className="reviewername">{review.name}</h3>
-                <div className="starsinreviewsinprograms">
-                {
-                  Array.from(Array(review.start),(e,i)=>{
-                    return  <img className="reviewstarimage" src={images} alt="" srcset="" width="18px" height="18px" />
-                  })
-                }
-                </div>
+                  <h3 className="reviewername">{review.name}</h3>
+                  <div className="starsinreviewsinprograms">
+                    {
+                      Array.from(Array(review.start), (e, i) => {
+                        return <img className="reviewstarimage" src={images} alt="" srcset="" width="18px" height="18px" />
+                      })
+                    }
+                  </div>
                 </div>
                 <div className="reviewtime">{review.date}</div>
               </div>
@@ -314,12 +322,12 @@ const ProgramPage = () => {
                 <p>{review.message} </p>
               </div>
             </div>
-          
+
           ))}
-          </div>
-          <div className="apply-now-btn">Apply</div>
-          </div>
-          {/* 
+        </div>
+        <div className="apply-now-btn">Apply</div>
+      </div>
+      {/* 
           <div className="reviews-card">
             <div className="reviewer">
               <img src={Man} />
@@ -360,10 +368,10 @@ const ProgramPage = () => {
             </div>
           </div>
  */}
-       
 
-        
-      </div>
+
+
+    </div>
     // </div>
   );
 };

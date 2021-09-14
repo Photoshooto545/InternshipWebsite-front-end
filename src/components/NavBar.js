@@ -8,8 +8,10 @@ import "./NavBar.css";
 
 const NavBar = () => {
   return (
+
     <>
       <nav className="navContainer">
+
         <div className="logo">
           <Link to="/">
             <img src={logo} alt="PhotoShooto" />
@@ -33,6 +35,7 @@ const NavBar = () => {
           </NavLink>
         </div>
         <div className="navUser">
+
           <NavLink activeClassName="active" to="/dashboard">
             <img className="profile" src={profile}  alt="profile-pic" />
           </NavLink> 
@@ -48,6 +51,7 @@ const NavBar = () => {
 
       </nav>
     </>
+
   );
 };
 
