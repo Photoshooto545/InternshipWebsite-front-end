@@ -1,7 +1,7 @@
 .BlogSliderContainer {
     width: 100%;
     height: fit-content;
-    padding-top: 94px;
+    /* padding-top: 94px; */
     position: relative;
     /* border: 2px solid black; */
     background: rgba(192, 77, 174, 0.06);

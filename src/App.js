@@ -12,7 +12,7 @@ import LoginPage from "./Pages/Login/LoginPage";
 import SignupPage from "./Pages/SignUp/SignupPage";
 import NotfoundPage from "./Pages/NotfoundPage/NotfoundPage";
 import DashBoardPage from "./Pages/DashBoard/DashBoardPage";
-
+import intern_info from "./Pages/intern_info/Intern_info";
 function App() {
   return (
     <Router>
@@ -22,6 +22,7 @@ function App() {
         <Route exact path="/programs" component={ProgramsPage} />
         <Route exact exact path="/programs/:progName" component={ProgramPage} />
         <Route exact path="/about" component={AboutPage} />
+        <Route exact path="/intern_info" component={intern_info} />
         <Route path="/blog" component={BlogPage} />
         <Route exact path="/contact" component={ContactPage} />
         <Route exact path="/login" component={LoginPage} />

@@ -24,7 +24,7 @@ const ProgramSection1 = () => {
     
     return (
         <div>
-            <div className={styles.programbar}></div>
+            {/* <div className={styles.programbar}></div> */}
             <div className={styles.programslideshow}>
                 <Carousel {...breakPoints} onClickItem={(index,item)=>{
                     history.push(`/${ProgramsPageData[index].dept}`)
