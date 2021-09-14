@@ -17,7 +17,7 @@ function App() {
   return (
     <Router>
       <NavBar />
-       <Switch>
+      <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/programs" component={ProgramsPage} />
         <Route exact exact path="/programs/:progName" component={ProgramPage} />
@@ -28,8 +28,8 @@ function App() {
         <Route exact path="/signup" component={SignupPage} />
         <Route exact path="/dashboard" component={DashBoardPage} />
         <Route component={NotfoundPage} />
-       </Switch>
-      <Footer/>
+      </Switch>
+      <Footer />
     </Router>
   );
 }
