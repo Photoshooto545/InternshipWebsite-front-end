@@ -43,7 +43,7 @@ const DSidebar = () => {
                 <li className={styles.link}><Link className={styles.linkcontent} smooth={true} duration={100} to="myaccount"><a>My Account</a></Link></li>
                 <li className={styles.link}><Link className={styles.linkcontent} smooth={true} duration={100} to="appstatus"><a>Application Status</a></Link></li>
                 <li className={styles.link}><Link className={styles.linkcontent} smooth={true} duration={100} to="application"><a>Application</a></Link></li>
-                <li className={styles.link}><Link className={styles.linkcontent} smooth={true} duration={100} to="myaccount"><a>Document</a></Link></li>
+                <li className={styles.link}><Link className={styles.linkcontent} smooth={true} duration={100} to="document"><a>Document</a></Link></li>
                 <li className={styles.link}><Link className={styles.linkcontent} smooth={true} duration={100} to="settings"><a>Setting</a></Link></li>
                             
             </ul> 
