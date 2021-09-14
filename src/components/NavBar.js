@@ -7,7 +7,8 @@ import "./NavBar.css";
 
 const NavBar = () => {
   return (
-    <div>
+    // <div>
+    <>
       <div className="navContainer">
         <div className="logo">
           <Link to="/">
@@ -40,7 +41,8 @@ const NavBar = () => {
           </NavLink>
         </div>
       </div>
-    </div>
+    </>
+    // </div>
     // <div className="navContainer">
     // </div>
 
