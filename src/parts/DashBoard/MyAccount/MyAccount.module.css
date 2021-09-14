@@ -1,5 +1,5 @@
 .myContainer{
-    margin: 0 2.7% 5% 26.5%;
+    margin: 0 2.7% 0% 2.7%;
     background: #E5E5E5;
     font-family: Roboto;
     font-style: normal;
@@ -37,7 +37,7 @@
 .summary{
     background: #E5E5E5;
     display: grid;
-    grid-template-columns: 34% 64%;
+    grid-template-columns: 30% auto;
     grid-column-gap: 2%;
 }
 .pic{
@@ -61,7 +61,7 @@
     bottom: 0;
     width: 65%;
     /* border: 1px solid black; */
-    height: 60%;
+    height: 67%;
 }
 .profilepic img{
     border-radius: 50%;
@@ -79,7 +79,7 @@
     height: 23%;
     width: 25%;
     background: #FFFFFF;
-    padding: 9px;
+    padding: 8px;
 }
 .heading2{
     font-weight: 500;

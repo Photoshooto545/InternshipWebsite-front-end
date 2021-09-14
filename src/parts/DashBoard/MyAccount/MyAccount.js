@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import styles from './MyAccount.module.css'
-import img from './man-1845814_640 1.png'
+import img from '../../../assets/images/man-1845814_640 1.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCamera } from '@fortawesome/free-solid-svg-icons'
 import {CircularProgressbar} from 'react-circular-progressbar';
@@ -25,8 +25,8 @@ const MyAccount = () => {
     };
     return (
         <div>
-        <div className={styles.temp}></div>
-        <div className={styles.myContainer}>
+        {/* <div className={styles.temp}></div> */}
+        <div id="myaccount" className={styles.myContainer}>
             <h1 className={styles.heading1}>My Account</h1>
             <div className={styles.info}>
                 <div className={styles.summary}>

@@ -32,6 +32,9 @@ class SwitchExample extends Component {
                 />
             );
         }
+        else{
+            return(<></>)
+        }
     }
 }
 

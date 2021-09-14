@@ -30,6 +30,9 @@ const NavBar = () => {
         <NavLink activeClassName="active" to="/contact">
           Contact
         </NavLink>
+        <NavLink activeClassName="active" to="/dashboard">
+          DashBoard
+        </NavLink>
       </div>
       <div className="navUser">
         <NavLink to="/login" className="loginInBtn">
