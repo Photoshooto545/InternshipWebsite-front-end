@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from "./ProgramSection2.module.css";
 import InternshipPrograms from "../../../utils/InternshipPrograms.json";
-import Intern_info from "../../../Pages/intern_info/Intern_info"
 import { Link } from "react-router-dom";
 
 const ProgramSection2 = () => {
@@ -18,7 +17,7 @@ const ProgramSection2 = () => {
               <div className={styles.cardLink}>
                 <div className={styles.programDuration}>Duration:{Internship.duration}</div>
                 <div className={styles.programKnowMore}>
-                  <Link to={Intern_info}>Apply now</Link>
+                <Link to={`/programs/${Internship.link}`}>Apply now</Link>
                 </div>
               </div>
             </div>
