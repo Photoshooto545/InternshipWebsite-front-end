@@ -2,13 +2,16 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
 import logo from "../assets/images/logo.png";
+import profile from '../assets/images/man-1845814_640 1.png'
 
 import "./NavBar.css";
 
 const NavBar = () => {
   return (
-    <div>
-      <div className="navContainer">
+
+    <>
+      <nav className="navContainer">
+
         <div className="logo">
           <Link to="/">
             <img src={logo} alt="PhotoShooto" />
@@ -32,17 +35,22 @@ const NavBar = () => {
           </NavLink>
         </div>
         <div className="navUser">
-          <NavLink to="/login" className="loginInBtn">
-            Login
-          </NavLink>
-          <NavLink to="/signup" className="signInLink">
-            Create New Account?
-          </NavLink>
+
+          <NavLink activeClassName="active" to="/dashboard">
+            <img className="profile" src={profile}  alt="profile-pic" />
+          </NavLink> 
         </div>
-      </div>
-    </div>
-    // <div className="navContainer">
-    // </div>
+        {/* <div className="navUser">
+        <NavLink to="/login" className="loginInBtn">
+          Login
+        </NavLink>
+        <NavLink to="/signup" className="signInLink">
+          Create New Account?
+        </NavLink>
+      </div> */}
+
+      </nav>
+    </>
 
   );
 };

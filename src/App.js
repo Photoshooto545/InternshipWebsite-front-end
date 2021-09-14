@@ -11,7 +11,8 @@ import BlogPage from "./Pages/Blog/BlogPage";
 import LoginPage from "./Pages/Login/LoginPage";
 import SignupPage from "./Pages/SignUp/SignupPage";
 import NotfoundPage from "./Pages/NotfoundPage/NotfoundPage";
-import intern_info from "./Pages/intern_info/Intern_info";
+import DashBoardPage from "./Pages/DashBoard/DashBoardPage";
+
 function App() {
   return (
     <Router>
@@ -21,11 +22,12 @@ function App() {
         <Route exact path="/programs" component={ProgramsPage} />
         <Route exact exact path="/programs/:progName" component={ProgramPage} />
         <Route exact path="/about" component={AboutPage} />
-        <Route exact path="/intern_info" component={intern_info} />
+
         <Route path="/blog" component={BlogPage} />
         <Route exact path="/contact" component={ContactPage} />
         <Route exact path="/login" component={LoginPage} />
         <Route exact path="/signup" component={SignupPage} />
+        <Route exact path="/dashboard" component={DashBoardPage} />
         <Route component={NotfoundPage} />
       </Switch>
       <Footer />
