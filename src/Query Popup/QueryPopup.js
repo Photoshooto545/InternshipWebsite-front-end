@@ -1,16 +1,15 @@
 import React from "react";
-import './QueryPopup.css'
+import styles from './Querypopup.module.css'
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import ImageSlider from './Carousel';
 
 const Popup = props => {
     return (
-        <div className="popup-box">
-            <div className="box">
+        <div className={styles.popup}>
+            <div className={styles.box}>
                 <h2>QUERY</h2>
-                <span className="close" onClick={props.handleClose}><FontAwesomeIcon icon={faTimes} size="lg" /></span>
-                <form action="">
+                <span className={styles.closeicon} onClick={props.handleClose}><FontAwesomeIcon icon={faTimes} size="lg" /></span>
+                <form action="" className={styles.queryform}>
                     <div>
                         <label htmlFor="name">Name</label>
                         <input type="text" name="Name" id="name" placeholder="Name" />
@@ -23,7 +22,7 @@ const Popup = props => {
                         <label htmlFor="message">Message</label>
                         <textarea name="Message" id="message" cols="54" rows="4" placeholder="Your Query Here....."></textarea>
                     </div>
-                    <div className="send-btn">
+                    <div className={styles.sendbtn}>
                         <button>SEND</button>
                     </div>
                 </form>

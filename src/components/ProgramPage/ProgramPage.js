@@ -276,7 +276,6 @@ const ProgramPage = () => {
           </div>
           <div className="certificate-right">
             <img onClick={togglePopup} src={certificate} alt="" />
-            {isOpen && <Popup handleClose={togglePopup} />}
           </div>
         </div>
       </div>
@@ -369,6 +368,7 @@ const ProgramPage = () => {
           </div>
  */}
 
+      {isOpen && <Popup handleClose={togglePopup} />}
 
 
     </div>
