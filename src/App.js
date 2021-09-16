@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import HomePage from "./Pages/Home/HomePage";
 import ProgramsPage from "./Pages/Programs/ProgramsPage";
 import ProgramPage from "./components/ProgramPage/ProgramPage";
@@ -12,6 +12,7 @@ import LoginPage from "./Pages/Login/LoginPage";
 import SignupPage from "./Pages/SignUp/SignupPage";
 import NotfoundPage from "./Pages/NotfoundPage/NotfoundPage";
 import DashBoardPage from "./Pages/DashBoard/DashBoardPage";
+import Footer from "./Footer/footer"
 
 function App() {
   return (
