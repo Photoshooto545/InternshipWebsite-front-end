@@ -3,19 +3,21 @@
     font-family: Roboto;
 }
 
-.popup-box {
-    width: auto;
-    height: auto;
+.popup {
+    position: fixed;
+    width: 40%;
+    height: 92vh;
     background: #005A8C;
     border-radius: 71px;
-    display: flex;
-    justify-content: center;
     padding: 2.5rem;
-    margin-top: 1.6rem;
+    margin-bottom: 11rem;
     left: 30%;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    z-index: 100;
 }
 
-.close {
+.closeicon {
     padding: 1rem;
     color: white;
     margin: 0rem 0rem 0 29rem;
@@ -35,7 +37,7 @@ h2 {
     text-align: center;
 }
 
-label {
+.queryform label {
     display: block;
     font-weight: bold;
     font-size: 22px;
@@ -43,7 +45,7 @@ label {
     margin: 1.5rem 0 0.5rem 0.6rem;
 }
 
-input[type="text"], input[type="email"] {
+.queryform input[type="text"], .queryform input[type="email"] {
     background-color: white;
     border-radius: 17px;
     width: 30rem;
@@ -51,20 +53,20 @@ input[type="text"], input[type="email"] {
     padding: 1rem;
 }
 
-textarea {
+.queryform textarea {
     background-color: white;
     border-radius: 17px;
     margin-left: 1.6rem;
     padding: 1rem;
 }
 
-input::placeholder, textarea::placeholder {
+.queryform input::placeholder, .queryform textarea::placeholder {
     color: rgba(0, 0, 0, 0.25);
     font-weight: normal;
     font-size: 20px;
 }
 
-.send-btn button {
+.sendbtn button {
     background-color: white;
     height: 3.4rem;
     width: 13rem;

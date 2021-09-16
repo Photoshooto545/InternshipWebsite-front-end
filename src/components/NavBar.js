@@ -8,39 +8,45 @@ import "./NavBar.css";
 
 const NavBar = () => {
   return (
-
+    // <div>
     <>
-      <nav className="navContainer">
+      <div className="navContainer">
 
-        <div className="logo">
-          <Link to="/">
-            <img src={logo} alt="PhotoShooto" />
-          </Link>
-        </div>
-        <div className="navLinks">
-          <NavLink exact activeClassName="active" to="/">
-            Home
-          </NavLink>
-          <NavLink activeClassName="active" to="/programs">
-            Programs
-          </NavLink>
-          <NavLink activeClassName="active" to="/about">
-            About
-          </NavLink>
-          <NavLink activeClassName="active" to="/blog">
-            Blog
-          </NavLink>
-          <NavLink activeClassName="active" to="/contact">
-            Contact
-          </NavLink>
-        </div>
-        <div className="navUser">
+        <>
+          <nav className="navContainer">
 
-          <NavLink activeClassName="active" to="/dashboard">
-            <img className="profile" src={profile}  alt="profile-pic" />
-          </NavLink> 
-        </div>
-        {/* <div className="navUser">
+            <div className="logo">
+              <Link to="/">
+                <img src={logo} alt="PhotoShooto" />
+              </Link>
+            </div>
+            <div className="navLinks">
+              <NavLink exact activeClassName="active" to="/">
+                Home
+              </NavLink>
+              <NavLink activeClassName="active" to="/programs">
+                Programs
+              </NavLink>
+              <NavLink activeClassName="active" to="/about">
+                About
+              </NavLink>
+              <NavLink activeClassName="active" to="/blog">
+                Blog
+              </NavLink>
+              <NavLink activeClassName="active" to="/contact">
+                Contact
+              </NavLink>
+            </div>
+            <div className="navUser">
+
+              <NavLink activeClassName="active" to="/dashboard">
+                <img className="profile" src={profile} alt="profile-pic" />
+              </NavLink>
+            </div>
+          </nav>
+        </>
+      </div>
+      {/* <div className="navUser">
         <NavLink to="/login" className="loginInBtn">
           Login
         </NavLink>
@@ -48,8 +54,6 @@ const NavBar = () => {
           Create New Account?
         </NavLink>
       </div> */}
-
-      </nav>
     </>
 
   );

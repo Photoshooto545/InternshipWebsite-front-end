@@ -19,7 +19,8 @@ const ProgramSection2 = () => {
               <div className={styles.cardLink}>
                 <div className={styles.programDuration}>Duration:{Internship.duration}</div>
                 <div className={styles.programKnowMore}>
-                <Link to={`/programs/${Internship.link}`}>Apply now</Link>
+                  {/* <Link to={Intern_info}>Apply now</Link> */}
+                  <Link to={`/programs/${Internship.link}`}>Apply now</Link>
                 </div>
               </div>
             </div>

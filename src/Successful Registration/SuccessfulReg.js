@@ -1,5 +1,5 @@
 import React from 'react'
-import './successfulReg.css';
+import styles from './successfulReg.module.css';
 import logo from './logo.png';
 import photo from './Group (1).png';
 import check from './Group 930.png';
@@ -7,18 +7,18 @@ import check from './Group 930.png';
 function SuccessfulRegistraion() {
     return (
         <div>
-            <div className="container">
-                <div className="logo">
-                    <img src={logo} id="logo" alt="" />
+            <div className={styles.container}>
+                <div className={styles.logo}>
+                    <img src={logo} id={styles.logo} alt="" />
                     <div>
-                        <span id="name">Photoshooto</span>
-                        <span id="line">"Your Memories, Our Promise"</span>
+                        <span id={styles.name}>Photoshooto</span>
+                        <span id={styles.line}>"Your Memories, Our Promise"</span>
                     </div>
                 </div>
-                <div className="content">
-                    <img src={photo} id="photo" alt="" />
-                    <div className="card">
-                        <img src={check} id="check" alt="" />
+                <div className={styles.content}>
+                    <img src={photo} id={styles.photo} alt="" />
+                    <div className={styles.card}>
+                        <img src={check} id={styles.check} alt="" />
                         <div>
                             <h1>Successful Registration</h1>
                         </div>
