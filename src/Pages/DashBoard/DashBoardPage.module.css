@@ -1,0 +1,9 @@
+.dashBoard{
+    position: relative;
+    top: -88px;
+}
+.dashboardContainer{
+    display: grid;
+    grid-template-columns: 20% auto;
+    background: #E5E5E5;
+}

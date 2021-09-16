@@ -48,7 +48,11 @@
   align-items: center;
   flex-direction: column;
 }
-
+.profile{
+  width: 70px;
+  height: 60px;
+  border-radius: 50%;
+}
 .navUser > a {
   text-decoration: none;
 }
