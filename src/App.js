@@ -12,7 +12,7 @@ import LoginPage from "./Pages/Login/LoginPage";
 import SignupPage from "./Pages/SignUp/SignupPage";
 import NotfoundPage from "./Pages/NotfoundPage/NotfoundPage";
 import DashBoardPage from "./Pages/DashBoard/DashBoardPage";
-import intern_info from "./Pages/intern_info/Intern_info";
+import intern_info from "./Pages/Intern_info/Intern_info";
 function App() {
   return (
     <Router>

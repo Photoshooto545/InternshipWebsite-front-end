@@ -9,7 +9,7 @@ const Intern_info = () => {
   const validate = Yup.object({
     firstname: Yup.string()
       .max(15, "max 15 character")
-      .required("firstname is Required"),
+      .required("firstname is sRequired"),
     lastname: Yup.string()
       .max(15, "max 15 character")
       .required("lastname is Required"),
