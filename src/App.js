@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import HomePage from "./Pages/Home/HomePage";
 import ProgramsPage from "./Pages/Programs/ProgramsPage";
 import ProgramPage from "./components/ProgramPage/ProgramPage";
@@ -13,6 +13,8 @@ import SignupPage from "./Pages/SignUp/SignupPage";
 import NotfoundPage from "./Pages/NotfoundPage/NotfoundPage";
 import DashBoardPage from "./Pages/DashBoard/DashBoardPage";
 import intern_info from "./Pages/Intern_info/Intern_info";
+import Footer from "./Footer/footer"
+
 function App() {
   return (
     <Router>
