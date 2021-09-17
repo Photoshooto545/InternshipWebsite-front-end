@@ -51,8 +51,9 @@ const ProgramSection1 = () => {
                 </Carousel>
             </div>
 
-        </div>
-    )
+  
+    </div>
+  )
 }
 
 export default ProgramSection1

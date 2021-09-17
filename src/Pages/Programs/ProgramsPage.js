@@ -9,11 +9,11 @@ import ProgramSection3 from "../../parts/Program/ProgramSection3/ProgramSection3
 
 const ProgramsPage = () => {
   return (<div>
-    <ProgramSection1/>
+    <ProgramSection1 />
 
-    <ProgramSection2/>
+    <ProgramSection2 />
 
-    <ProgramSection3/>
+    <ProgramSection3 />
   </div>);
 };
 

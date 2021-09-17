@@ -6,10 +6,10 @@ import "./Intern_info.css"
 
 const Intern_info = () => {
 
-  const validate = Yup.object({
+  const validate = Yup.object().shape({
     firstname: Yup.string()
       .max(15, "max 15 character")
-      .required("firstname is sRequired"),
+      .required("firstname is Required"),
     lastname: Yup.string()
       .max(15, "max 15 character")
       .required("lastname is Required"),
