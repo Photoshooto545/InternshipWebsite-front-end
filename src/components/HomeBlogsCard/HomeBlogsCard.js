@@ -15,7 +15,7 @@ const HomeBlogsCard = ({ blogData: { id, img, title, info, link } }) => {
         <div className={cx(styles.blogImgDots, styles.bottom)}></div>
         <div className={cx(styles.blogImgDots, styles.left)}></div>
       </div>
-      <div className={styles.blogTitle}>{title}</div>
+      {/* <div className={styles.blogTitle}>{title}</div> */}
       <div className={styles.blogInfo}>{info}</div>
       <div className={styles.blogReadMore}>
         <Link to={link}>Read More</Link>

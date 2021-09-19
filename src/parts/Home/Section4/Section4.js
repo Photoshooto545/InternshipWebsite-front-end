@@ -22,7 +22,7 @@ const Section4 = () => {
     <section className={styles.homeBlogsContainer}>
       <h1 className={styles.heading}>Blogs</h1>
       <h3 className={styles.subHeading}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, rerum!
+        Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
       </h3>
       <div className={styles.blogsCardContainer}>
         <Carousel breakPoints={breakPoints}>
