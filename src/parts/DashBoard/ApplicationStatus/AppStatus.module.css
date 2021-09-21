@@ -44,4 +44,32 @@
     width: 70px;
     
 }
+@media(max-width:1210px){
+    .AppStatusContainer{
+        margin: 0 -0.3% 0% 2.7%;
+        padding-right: 3.3%;
+    }
+}
+@media(max-width: 1000px){
+    .AppStatusContainer{
+        margin: 0 -2.3% 0% 3.7%;
+    }
+}
+@media(max-width: 870px){
+    .AppStatusContainer{
+        margin: 0 -6.3% 0% 5.7%;
+        padding-right: 3.3%;
+    }
+}
+@media(max-width:700px){
+    .AppStatusContainer{
+        margin: 0 -11.3% 0% 5.7%;
+        padding-left: 3.3%;
+    }
+}
+@media(max-width:390px){
+    .AppStatusContainer{
+        margin: 0 -13.3% 0% 5.7%;
+    }
+}
 
