@@ -170,3 +170,37 @@ h4 {
     color: #FFFFFF;    
     margin-bottom: 3.125rem;
 }
+@media(max-width:1210px){
+    .card{
+        margin: 0 -0.3% 0 2.7%;
+        padding-right: 3.3%;
+    }
+}
+@media(max-width:1000px){
+    .card{
+        margin: 0 -2.3% 0 2.7%;
+    }
+}
+@media(max-width: 870px){
+    .card{
+        margin: 0 -6.3% 0 2.7%;
+    }
+    .heading1{
+        padding: 37px 0 32px 50px;
+    }
+    .settings{
+        width: 96%;
+        margin-left: 41px;
+    }
+}
+@media(max-width: 700px){
+    .card{
+        margin: 0 -11.3% 0% 2.7%;
+        padding-left: 3.3%;
+    }
+}
+@media(max-width:390px){
+    .card{
+        margin: 0 -13.3% 0% 2.7%;
+    }
+}
