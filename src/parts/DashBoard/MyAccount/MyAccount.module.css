@@ -184,4 +184,40 @@ li {
     display: flex;
     justify-content: center;
 }
+@media (max-width: 1210px){
+    .myContainer{
+        margin: 0 -0.3% 0% 2.7%;
+        padding-right: 3.3%;
+    }
+}
+@media(max-width: 1000px){
+    .myContainer{
+        margin: 0 -2.3% 0% 3.7%;
+    }
+}
+@media(max-width: 870px){
+    .myContainer{
+        margin: 0 -6.3% 0% 5.7%;
+    }
+    .heading1{
+        padding: 37px 0 32px 26px;
+    }
+    .profilepic{
+        height: 62%;
+    }
+}
+@media(max-width:700px){
+    .myContainer{
+        margin: 0 -11.3% 0% 5.7%;
+        padding-left: 4.3%;
+    }
+
+}
+@media(max-width:390px){
+    .myContainer{
+        margin: 0 -13.3% 0% 5.7%;
+        padding-left: 3.3%;
+    }
+}
+
 
