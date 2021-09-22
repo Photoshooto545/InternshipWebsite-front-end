@@ -54,3 +54,46 @@
   .outerofnameandstars{
     width: 70%;
   }
+  @media only screen and (max-width: 700px) {
+  .reviews h1 {
+    font-size: 4rem;
+  }
+
+  .reviewsmini {
+   flex-direction: column;
+    align-items: center; 
+  }
+
+  .reviewscard {
+    margin: 0rem 1rem 4rem 1rem;
+    width: 83%;
+    height: 80vh;
+  }
+  .reviewimage{
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+
+  .reviewer p {
+    font-size: 3.2rem;
+    margin-top: 1.5rem;
+  }
+  .reviewstarimage{
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .reviewtime{
+    font-size: 2rem;
+  }
+  
+  .reviewparagraph p{
+    font-size: 3rem;
+    line-height: 2.7rem;
+  }
+
+  .reviewer {
+    padding: 1.3rem 2rem;
+    display: flex;
+  }
+}
