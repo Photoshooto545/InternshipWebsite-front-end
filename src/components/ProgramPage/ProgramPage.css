@@ -210,29 +210,29 @@
   display: flex;
   justify-content: center;
 }
-.aboutinternshipinnerbox{
-  background: #B1D9E3;
+.aboutinternshipinnerbox {
+  background: #b1d9e3;
   box-shadow: 3px 6px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   padding: 20px 40px;
   padding-bottom: 30px;
 }
-.statusheading{
+.statusheading {
   font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 36px;
-color: #000000;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  color: #000000;
 }
-.statusline1{
+.statusline1 {
   font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-color: #000000;  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: #000000;
 }
 
-.numberofopening{
+.numberofopening {
   display: flex;
   align-items: center;
   font-family: Roboto;
@@ -242,27 +242,27 @@ color: #000000;
   color: #000000;
   margin-top: 10px;
 }
-.numberofopening1{
+.numberofopening1 {
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-padding: 0px 5px;
-color: #FFFFFF;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  padding: 0px 5px;
+  color: #ffffff;
   margin-right: 5px;
-background: #636363;
-border-radius: 4px;
+  background: #636363;
+  border-radius: 4px;
 }
 
-.numberofopening2{
-margin-left: 5px;
+.numberofopening2 {
+  margin-left: 5px;
 }
 
-.numberofopening3{
-margin-left: 5px;
+.numberofopening3 {
+  margin-left: 5px;
 }
 
 /* ------------------------Section 3, Skills Required--------------------------- */
@@ -533,7 +533,6 @@ margin-left: 5px;
 .reviews {
   margin: 4%;
   font-size: 0.9rem;
-  
 }
 
 .reviews h1 {
@@ -544,8 +543,8 @@ margin-left: 5px;
   line-height: 42px;
   /* text-align: center; */
   /* color: #005A8C; */
-  
-margin-bottom: 40px;
+
+  margin-bottom: 40px;
 }
 
 .reviewsmini {
@@ -564,12 +563,12 @@ margin-bottom: 40px;
   padding: 0.3rem 1rem;
   display: flex;
 }
-.reviewimage{
-    width: 47px;
-    height: 40px;
-    border-radius: 5px;
+.reviewimage {
+  width: 47px;
+  height: 40px;
+  border-radius: 5px;
 }
-.starsinreviewsinprograms{
+.starsinreviewsinprograms {
   display: flex;
   margin-left: 5px;
 }
@@ -579,17 +578,17 @@ margin-bottom: 40px;
   margin-left: 0.7rem;
   font-weight: 900;
 }
-.reviewername{
+.reviewername {
   font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-color: #000000;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
 }
 .reviewparagraph {
   padding: 0.3rem 1rem;
 }
-.outerofnameandstars{
+.outerofnameandstars {
   width: 70%;
 }
 
@@ -603,4 +602,166 @@ color: #000000;
   margin: auto;
   background: linear-gradient(180deg, #089baf 0%, #005a8c 100%);
   cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .programPageContainer {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  .title-div h2 {
+    font-size: 4rem;
+  }
+
+  .lower-bar {
+    width: 23rem;
+  }
+
+  .title-div p {
+    width: 36rem;
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+
+  .workfromhomeheadings {
+    font-size: 3.6rem;
+  }
+
+  .startdatelogo {
+    width: 19vw;
+    height: 26vh;
+  }
+
+  .workfromhomeinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .firstline {
+    font-size: 2.5rem;
+  }
+
+  .secondline {
+    font-size: 2.3rem;
+  }
+  .aboutintershipheading {
+    font-size: 3.6rem;
+  }
+  .aboutinternshipline {
+    font-size: 2.2rem;
+    line-height: 2.3rem;
+  }
+  .aboutinternshipdetails {
+    margin-left: 3%;
+    width: 59%;
+  }
+
+  .statusheading {
+    font-size: 2.7rem;
+  }
+
+  .statusline1 {
+    font-size: 2.2rem;
+  }
+
+  .skills h1 {
+    font-size: 3.6rem;
+  }
+  .skills-mini {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .skills-mini img {
+    width: 230vw;
+  }
+
+  .skills-mini p {
+    text-align: center;
+    padding: 3rem;
+    font-size: 3rem;
+  }
+
+  .perks h1 {
+    font-size: 3.6rem;
+  }
+
+  .perks-bullet {
+    align-items: center;
+    margin-left: 10%;
+    padding: 12px;
+  }
+
+  .perks-bullet p {
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin-left: 1rem;
+    margin-top: 2rem;
+  }
+  .squared-div {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .perks-mini {
+    flex-direction: column;
+  }
+
+  .perks {
+    width: 80%;
+  }
+
+  .function h1 {
+    padding-top: 2rem;
+    font-weight: 900;
+    font-size: 3.6rem;
+  }
+
+  .function-mini p {
+    font-size: 2.3rem;
+  }
+  .p-info {
+    min-width: 246px;
+    top: 71px !important;
+    right: -109px !important;
+  }
+  .dotted-line {
+    height: 0;
+    border-bottom: 2px dashed #545454;
+    width: 15rem;
+    align-self: center;
+  }
+  .values-mini {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .value-div {
+    width: 210vw;
+    margin-bottom: 27vh;
+    height: 37rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .values h1 {
+    font-size: 3.6rem;
+  }
+  .value-div img {
+    position: initial;
+    width: 70%;
+    height: auto;
+  }
+
+  .value-div h5 {
+    position: initial;
+    color: white;
+    font-size: 3rem;
+  }
 }

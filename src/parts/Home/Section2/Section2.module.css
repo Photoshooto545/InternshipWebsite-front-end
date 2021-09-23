@@ -40,12 +40,37 @@
   line-height: 21px;
 }
 
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+  .section2Col h1 {
+    font-size: 43px;
+  }
+  .section2Col p {
+    font-size: 24px;
+    line-height: 1.7rem;
+  }
+  .section2Col a {
+    font-size: 25px;
+  }
+}
 @media only screen and (max-width: 700px) {
   .section2Row {
     flex-direction: column;
   }
 
-  .section2Col {
-    padding: 0px;
+  .homeSection2 {
+    width: 80%;
+  }
+
+  .section2Col h1 {
+    font-size: 48px;
+  }
+
+  .section2Col p {
+    font-size: 30px;
+    line-height: 2rem;
+  }
+
+  .section2Col a {
+    font-size: 18px;
   }
 }

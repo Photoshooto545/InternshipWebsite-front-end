@@ -39,15 +39,15 @@ const footer = () => {
                     <a href="#">Programs</a>
                     <a href="#">Blogs</a>
                 </div>
-                <div class={styles.right}>
+                <div className={styles.right}>
                     <div>
                         <span>
                             SUBSCRIBE TO OUR NEWSLETTER
                         </span>
                         <form>
-                            <div class={styles.emailbtn}>
+                            <div className={styles.emailbtn}>
                                 <input type="email" id={styles.email} placeholder="E-mail" />
-                                <button>JOIN</button>
+                                <button className={styles.joinbtn}>JOIN</button>
                             </div>
                             <div>
                                 <input type="checkbox" id={styles.tnc} />
@@ -66,7 +66,7 @@ const footer = () => {
             </div >
             <div class={styles.copyright}>
                 <FaRegCopyright className={styles.facopyright} />
-                <span>Coyright Photoshooto Internship 2020-21</span>
+                <span>Copyright Photoshooto Internship 2020-21</span>
             </div>
         </div >
     )
