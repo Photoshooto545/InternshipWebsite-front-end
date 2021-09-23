@@ -69,27 +69,27 @@ const Intern_info = () => {
       >
         {formik => (
           <Form>
-            <div style={{ marginLeft: "4vw", marginTop: "10vw", marginBottom: "5vw", display: "flex", flexDirection: "column", justifyContent: "space-evenly" }}>
+            <div style={{ marginLeft: "4vw", marginTop: "3vw", marginBottom: "5vw", display: "flex", flexDirection: "column", justifyContent: "space-evenly" }}>
               <div style={{ marginTop: "4vw" }}>
-                <p><a style={{ color: "#005A8C", fontSize: "36px", fontFamily: "Roboto", fontWeight: "bold" }}>Intern info</a></p>
+                <p><a href style={{ color: "#005A8C", fontSize: "36px", fontFamily: "Roboto", fontWeight: "bold" }}>Intern info</a></p>
               </div>
               <div>
                 <p id="boxname1001" >Your Name<span id="star">*</span></p>
                 <div style={{ display: "flex" }}>
                   <div>
-                    <input class="inputbox1001" placeholder="Nitin" type="text"
+                    <input className="inputbox1001" placeholder="Nitin" type="text"
                       value={firstname} name="firstname" style={{ width: "18vw", marginLeft: "0px" }}
                       onChange={(e) => setFirstname(e.target.value)} ></input>
                     <ErrorMessage component="div" name="firstname" className="error" />
                   </div>
                   <div>
-                    <input class="inputbox1001" placeholder="Mikeshbhai" type="text"
+                    <input className="inputbox1001" placeholder="Mikeshbhai" type="text"
                       value={midname} name="midname" style={{ width: "18vw" }}
                       onChange={(e) => setMidname(e.target.value)} ></input>
                     <ErrorMessage component="div" name="midname" className="error" />
                   </div>
                   <div>
-                    <input class="inputbox1001" placeholder="Patel" type="text"
+                    <input className="inputbox1001" placeholder="Patel" type="text"
                       value={lastname} name="lastname" style={{ width: "18vw" }}
                       onChange={(e) => setLastname(e.target.value)} ></input>
                     <ErrorMessage component="div" name="lastname" className="error" />
@@ -99,7 +99,7 @@ const Intern_info = () => {
               <div>
                 <p id="boxname1001" >BirthDate<span id="star">*</span></p>
                 <div >
-                  <input class="inputbox1001" placeholder="Date" type="date"
+                  <input className="inputbox1001" placeholder="Date" type="date"
                     value={bday} style={{ marginLeft: "0px", width: "18vw" }}
                     onChange={(e) => setBday(e.target.value)}
                   ></input>
@@ -108,7 +108,7 @@ const Intern_info = () => {
               <div>
                 <p id="boxname1001" >Contact No<span id="star">*</span></p>
                 <div style={{ margin: "0px" }}>
-                  <input class="inputbox1001" placeholder="0000000000"
+                  <input className="inputbox1001" placeholder="0000000000"
                     value={mobile} name="mobile"
                     onChange={(e) => setMobile(e.target.value)}
                     type="text" style={{ margin: "0px", width: "25vw" }}></input>
@@ -118,7 +118,7 @@ const Intern_info = () => {
               <div>
                 <p id="boxname1001" >email<span id="star">*</span></p>
                 <div style={{ margin: "0px" }}>
-                  <input class="inputbox1001" placeholder="xyz@gmail.com"
+                  <input className="inputbox1001" placeholder="xyz@gmail.com"
                     value={email} name="email"
                     onChange={(e) => setEmail(e.target.value)}
                     type="text" style={{ margin: "0px", width: "25vw" }}></input>
@@ -128,7 +128,7 @@ const Intern_info = () => {
               <div>
                 <p id="boxname1001" >College name<span id="star">*</span></p>
                 <div style={{ margin: "0px" }}>
-                  <input class="inputbox1001" placeholder="indian university"
+                  <input className="inputbox1001" placeholder="indian university"
                     value={college_name} name="college_name"
                     onChange={(e) => setCollege_name(e.target.value)}
                     type="text" style={{ margin: "0px" }}></input>
@@ -138,7 +138,7 @@ const Intern_info = () => {
               <div>
                 <p id="boxname1001" >Course<span id="star">*</span></p>
                 <div style={{ margin: "0px" }}>
-                  <input class="inputbox1001" placeholder="B.tech"
+                  <input className="inputbox1001" placeholder="B.tech"
                     value={course} name="course"
                     onChange={(e) => setCourse(e.target.value)}
                     type="text" style={{ margin: "0px", width: "25vw" }}></input>
@@ -148,7 +148,7 @@ const Intern_info = () => {
               <div>
                 <p id="boxname1001" >Name Of The Placement Coordinator/Dean<span id="star">*</span></p>
                 <div style={{ margin: "0px" }}>
-                  <input class="inputbox1001" placeholder="B.tech"
+                  <input className="inputbox1001" placeholder="B.tech"
                     value={pcoordinator} name="pcoordinator"
                     onChange={(e) => setPcoordinator(e.target.value)}
                     type="text" style={{ margin: "0px", width: "25vw" }}></input>
@@ -157,7 +157,7 @@ const Intern_info = () => {
               <div>
                 <p id="boxname1001" >What Is Perpose Of Join this Internship<span id="star">*</span></p>
                 <div style={{ margin: "0px" }}>
-                  <textarea class="inputbox1001" type="textarea"
+                  <textarea className="inputbox1001" type="textarea"
                     value={intrenship_purpose} name="intrenship_purpose"
                     onChange={(e) => setIntrenship_purpose(e.target.value)}
                     cols="65" style={{ margin: "0px" }}></textarea>
@@ -166,7 +166,7 @@ const Intern_info = () => {
               <div>
                 <p id="boxname1001" >What Type Of Profile Would You Like to Intern In?<span id="star">*</span></p>
                 <div style={{ margin: "0px" }}>
-                  <select class="inputbox1001" >
+                  <select className="inputbox1001" >
                     <option rows="50" value="select">select intrenship program </option>
                   </select>
                 </div>
@@ -174,7 +174,7 @@ const Intern_info = () => {
               <div>
                 <p id="boxname1001" >What Relevent Skills Or Experience Do You Have Before Beginning An Internship?<span id="star">*</span></p>
                 <div style={{ margin: "0px" }}>
-                  <textarea class="inputbox1001" type="textarea"
+                  <textarea className="inputbox1001" type="textarea"
                     value={skills}
                     onChange={(e) => setSkills(e.target.value)}
                     cols="65" style={{ margin: "0px" }}></textarea>
@@ -184,7 +184,7 @@ const Intern_info = () => {
               <div>
                 <p id="boxname1001" >How Much Time Would You Like to Intern ?<span id="star">*</span></p>
                 <div style={{ margin: "0px" }}>
-                  <select class="inputbox1001"  >
+                  <select className="inputbox1001"  >
                     <option rows="50" value="select">Start Time period </option>
                   </select>
                 </div>
@@ -193,7 +193,7 @@ const Intern_info = () => {
               <div>
                 <p id="boxname1001" >Upload Your CV<span id="star">*</span></p>
                 <div style={{ margin: "0px" }}>
-                  <label class="inputbox1001" style={{ paddingLeft: "2.5vw", paddingRight: "2.5vw" }}>
+                  <label className="inputbox1001" style={{ paddingLeft: "2.5vw", paddingRight: "2.5vw" }}>
                     <input type="file" style={{ display: "none" }} />
                     Select File
                   </label>
@@ -204,7 +204,7 @@ const Intern_info = () => {
               <div>
                 <p id="boxname1001" >Upload Adhar Card(pdf/jpg/jpeg)<span id="star">*</span></p>
                 <div style={{ margin: "0px" }}>
-                  <label class="inputbox1001" style={{ paddingLeft: "2.5vw", paddingRight: "2.5vw" }}>
+                  <label className="inputbox1001" style={{ paddingLeft: "2.5vw", paddingRight: "2.5vw" }}>
                     <input type="file" style={{ display: "none" }} />
                     Select File
                   </label>
@@ -215,7 +215,7 @@ const Intern_info = () => {
               <div>
                 <p id="boxname1001" >Reffered By (Name Of The Person)<span id="star">*</span></p>
                 <div style={{ margin: "0px" }}>
-                  <input class="inputbox1001" placeholder="Kapil Shing"
+                  <input className="inputbox1001" placeholder="Kapil Shing"
                     value={reffered_by}
                     onChange={(e) => setReffered_by(e.target.value)}
                     type="text" style={{ margin: "0px" }}></input>
@@ -234,7 +234,7 @@ const Intern_info = () => {
               </div>
 
               <div style={{ marginBottom: "3vw", marginLeft: "73vw" }}>
-                <button type="submit" style={{ backgroundColor: "#005A8C", color: "white", padding: "4px 2.7vw 4px 2.7vw", borderRadius: "0.3em" }}> submit </button>
+                <button className="submit-btn" type="submit" style={{ backgroundColor: "#005A8C", color: "white", padding: "4px 2.7vw 4px 2.7vw", borderRadius: "0.3em" }}> submit </button>
               </div>
             </div >
           </Form>

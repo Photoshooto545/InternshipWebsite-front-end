@@ -315,7 +315,9 @@ const ProgramPage = () => {
                     }
                   </div>
                 </div>
+                <div className="rt">
                 <div className="reviewtime">{review.date}</div>
+                </div>
               </div>
               <div className="reviewparagraph">
                 <p>{review.message} </p>
