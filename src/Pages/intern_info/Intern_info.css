@@ -12,7 +12,7 @@
     width: 92%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -149px;
+    margin-top: 20px;
   }
   
   /* nav {
@@ -48,4 +48,26 @@
     color: #adadad;
     font-size: 18px;
   }
+
+  @media only screen and (max-width: 700px) {
+.inputbox1001{
+  width: 100vw !important;
+  height: 15vh;
+  font-size: xx-large;
+}
+  .submit-btn{
+    font-size: xxx-large !important;
+    padding: 2px 7.7vw !important;
+    border-radius: 0.3em !important;
+    margin-top: 47px;
+    margin-left: 58vw;
+  }
+}
+
+
+  @media only screen and (min-width: 700px) and (max-width: 1150px) {
+    #intern_info_card {
+      margin-top: 26px;
+  }
+}
   
