@@ -12,7 +12,7 @@ import LoginPage from "./Pages/Login/LoginPage";
 import SignupPage from "./Pages/SignUp/SignupPage";
 import NotfoundPage from "./Pages/NotfoundPage/NotfoundPage";
 import DashBoardPage from "./Pages/DashBoard/DashBoardPage";
-import Intern_info from "./Pages/Intern_info/intern_info";
+import Intern_info from "./Pages/intern_info/Intern_info";
 import Footer from "./Footer/footer"
 
 function App() {

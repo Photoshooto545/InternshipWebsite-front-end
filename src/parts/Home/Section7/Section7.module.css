@@ -1,29 +1,29 @@
-.doyoulikeinternship{
+.doyoulikeinternship {
   width: auto;
   display: flex;
   box-shadow: 0px 2px 16px rgba(196, 196, 196, 0.63);
   border-radius: 12px;
   margin: 2rem 1.5rem 3rem 1.5rem;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   justify-content: space-between;
 }
 
-.leftdoyoulikeinternship{
+.leftdoyoulikeinternship {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.doyoulikeinternshipheading{
+.doyoulikeinternshipheading {
   text-align: center;
   font-weight: bold;
   font-size: 32px;
-  color: #005A8C;
+  color: #005a8c;
   margin-top: 1rem;
   margin-left: 4rem;
 }
 
-.doyoulikeinternshipinfo{
+.doyoulikeinternshipinfo {
   margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -40,7 +40,7 @@
   justify-content: space-around;
 }
 
-.doyoulikeinternshipdetails{
+.doyoulikeinternshipdetails {
   background-color: white;
   border-radius: 10px;
   outline: none;
@@ -52,62 +52,62 @@
   filter: drop-shadow(1px 3px 6px rgba(0, 0, 0, 0.25));
 }
 
-
 input.doyoulikeinternshipdetails[type="email"] {
   margin-left: 1rem;
 }
 
 select.doyoulikeinternshipdetails {
   margin-left: 1rem;
-} 
+}
 
-.doyoulikeinternshipdetails::placeholder{
+.doyoulikeinternshipdetails::placeholder {
   font-family: Roboto;
   font-weight: normal;
   font-size: 24px;
-  color: #A2A2A2;
+  color: #a2a2a2;
 }
 
-.doyouinternship{
+.doyouinternship {
   font-weight: normal;
   font-size: 24px;
-  color: #A2A2A2;
+  color: #a2a2a2;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url('./img/Untitled.png');
+  background-image: url("./img/Untitled.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: 2rem;
   background-position-x: 22rem;
 }
 
-.reservebutton{
-  display:flex ;
+.reservebutton {
+  display: flex;
   width: 100%;
   justify-content: center;
   padding: 10px 0;
   margin: 0.5rem 0 1.5rem 0;
 }
-.reserveseatbutton{
+.reserveseatbutton {
   width: 225px;
   height: 60px;
   outline: none;
   border: none;
-  background: #005A8C;
+  background: #005a8c;
   border-radius: 10px;
   font-weight: bold;
   font-size: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
   box-shadow: 0px 3px 5px #5a5959;
 }
 
-.rightdoyoulikeinternship{
+.rightdoyoulikeinternship {
   width: 40%;
   margin: 1rem 0 0 4rem;
 }
 
-.rightdoyoulikeinternshipimage{
-  width: 30rem;
+.rightdoyoulikeinternshipimage {
+  width: 22rem;
+  height: 18rem;
 }
 
 /* .subscribetonewsletter{
@@ -237,12 +237,7 @@ line-height: 28px;
 border: none;
 color: #FFFFFF;
 } */
-@media screen and (max-width:800px) {
 
-  .reservebutton{
-    margin-top: 170px;
-  }
-}
 
 /* @media screen and (max-width:750px) {
   .subscribetonewsletterdetailscontainer{
