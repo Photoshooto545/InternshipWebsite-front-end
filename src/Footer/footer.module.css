@@ -219,9 +219,9 @@ label {
 
 @media only screen and (max-width: 700px) {
   .right span {
-    font-size: 3.2rem;
+    font-size: 2.6rem;
     line-height: 3.38rem;
-    margin-left: 3.2rem;
+    margin-left: 5.2rem;
   }
 
   .right img {
@@ -288,7 +288,7 @@ label {
     height: 4rem;
   }
 
-  svg{
+  .fab svg{
       height: 3.8rem;
   }
 
