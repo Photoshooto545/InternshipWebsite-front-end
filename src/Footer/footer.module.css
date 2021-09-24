@@ -266,7 +266,7 @@ label {
   }
 
   input[type="checkbox"] {
-    width: 3.18rem;
+    width: 3.18rem !important;
     height: 3.18rem;
   }
 
