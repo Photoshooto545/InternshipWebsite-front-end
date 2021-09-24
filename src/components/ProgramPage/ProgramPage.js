@@ -37,7 +37,7 @@ const ProgramPage = () => {
 
   return (
     <div className="programPageContainer">
-      <div className="navbar-background"></div>
+      {/* <div className="navbar-background"></div> */}
 
       {/* First section containing Title and the specific image------------------*/}
       <div className="program-head">
