@@ -58,7 +58,6 @@ function Document() {
                     </div>
                     {files.map((file) => (
                         <div className={styles.filesUpload}>
-                            
                             <img className={styles.file} src={File} alt="" />
                             <span key={file.id} className={styles.fileName} >{file.fileName}</span>
                             <span className={styles.editOption}>

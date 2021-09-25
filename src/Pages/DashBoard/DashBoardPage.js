@@ -11,7 +11,7 @@ import styles from './DashBoardPage.module.css'
 const DashBoardPage = () => {
     return (
         <div className={styles.dashBoard}>
-            <DNavbar />
+            {/* <DNavbar /> */}
             <div className={styles.dashboardContainer}>
             <div><DSidebar/></div>
             <div>
