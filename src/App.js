@@ -33,7 +33,7 @@ function App() {
         {/* <Route component={NotfoundPage} /> */}
         <Route exact path="/forgotpassword" component={ForgotPassword} />
       </Switch>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }
