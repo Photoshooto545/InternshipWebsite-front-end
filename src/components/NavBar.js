@@ -49,10 +49,10 @@ const NavBar = () => {
               </NavLink>
               <div className="navUser-mobile">
 
-              <NavLink activeClassName="active" to="/dashboard">
-                <img className="profile" src={profile} alt="profile-pic" />DashBoard
-              </NavLink>
-            </div>
+                <NavLink activeClassName="active" to="/dashboard">
+                  <img className="profile" src={profile} alt="profile-pic" /> DashBoard
+                </NavLink>
+              </div>
             </div>
             <div className="navUser">
 

@@ -85,12 +85,13 @@
 @media only screen and (max-width: 700px) {
   .navContainer {
     position: relative;
+    height: 10rem;
    
   }
 
   .logo img {
-    width: 60vw;
-    height: 12vh;
+    width: 70vw;
+    height: 25vh;
   }
 
   .nav-menu {
@@ -99,7 +100,7 @@
     width: 100%;
     height: auto;
     position: absolute;
-    top: 80px;
+    top: 100%;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -107,6 +108,7 @@
 
   .nav-menu.active {
     background: rgb(27, 97, 159);
+    top: 100%;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -118,7 +120,7 @@
     padding: 0.5rem;
     margin: 1rem auto;
     width: 96%;
-    font-size: 2.5rem;
+    font-size: 3rem;
     display: table;
     color: white;
     /* border: 1px solid black; */
@@ -138,7 +140,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(25%, 50%);
+    margin: 2rem;
+    /* transform: translate(25%, 50%); */
   }
 
   .menu-icon {
@@ -154,6 +157,11 @@
   .fa-times {
     color: black;
     font-size: 4rem;
+    margin: 2rem 0.5rem 0 0;
+  }
+
+  .fa-bars {
+    margin: 2rem 0.5rem 0 0;
   }
 
   .navUser-mobile {
@@ -166,7 +174,7 @@
     background: rgb(27, 97, 159);
     text-decoration: none;
     color: #fff;
-    font-size: 1.5rem;
+    /* font-size: 1rem; */
   }
 
   .navUser-mobile:hover {
@@ -178,7 +186,7 @@
     text-decoration: none;
     color: white;
     margin-left: 10px;
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .navUser-mobile > a:hover {
     text-decoration: none;
@@ -187,7 +195,6 @@
   .navUser {
     display: none;
   }
-  
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1200px) {

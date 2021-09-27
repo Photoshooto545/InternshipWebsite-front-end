@@ -10,7 +10,7 @@ const Section1 = () => {
   return (
     <section className={styles.homeSection1}>
       <div className={styles.homeSec1Info}>
-        <div>
+        <div className={styles.leftcontent}>
           <h1>We help to build you its time to come together</h1>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
@@ -18,13 +18,13 @@ const Section1 = () => {
             nulla
           </p>
           <div className={styles.homeSec1BtnContainer}>
-            <div className={styles.homeSec1Btn}>know more</div>
+            <div className={styles.homeSec1Btn}>Know More</div>
           </div>
         </div>
       </div>
       <div className={styles.homeSec1Design}>
         {/* <div className={styles.rightRectangle}></div> */}
-        <div className={styles.leftRectangle}></div>
+        {/* <div className={styles.leftRectangle}></div> */}
         <img src={camGalImg} alt="img" className={styles.camGalImg} />
       </div>
     </section>

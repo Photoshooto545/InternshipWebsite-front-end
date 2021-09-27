@@ -1,30 +1,26 @@
 import React, { useState } from 'react'
-import styles from './signup.module.css';
+import styles from './login.module.css';
 import logo from './logo.png';
 import photo from './Group (1).png';
-import { Formik, Form, Field } from "formik";
+import { Formik, Form, Field, ErrorMessage, getIn } from "formik";
 import * as Yup from "yup";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF, faGoogle, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./signup.css"
+import "./login.css"
 
-const SignUp = () => {
+const LoginPage = () => {
 
     // Schema Validation
     const validate = Yup.object({
         email: Yup.string()
             .email("Invalid Email!")
             .required("Email is Required!"),
-        occupation: Yup.string().required("Select an Occupation!"),
         password: Yup.string()
             .min(8, "Password Must Contain Atleast 8 characters!")
             .matches(/^.*(?=.{8,})((?=.*[!@#$%^&*()\-_=+{};:,<.>]){1})(?=.*\d).*$/,
                 "Must Contain Atleast 1 Digit and Special Character!")
             .required("Password is Required!"),
-        confpassword: Yup.string()
-            .oneOf([Yup.ref('password'), null], "Passwords don't match!")
-            .required("Please Confirm Your Password!")
     })
 
     // Password Visibility Toggle
@@ -45,18 +41,16 @@ const SignUp = () => {
                 <div className={styles.content}>
                     <img src={photo} id={styles.photo} alt="" />
                     <div className={styles.card}>
-                        <h2 className={styles.heading}>Sign Up</h2>
+                        <h2 className={styles.heading}>Login</h2>
                         <Formik initialValues={{
                             email: '',
-                            occupation: '',
                             password: '',
-                            confpassword: '',
                         }}
                             validationSchema={validate}
                         >
                             {({ errors, touched }) => (
                                 <Form noValidate>
-                                    <div className={styles.signupform}>
+                                    <div className={styles.loginform}>
                                         <div>
                                             {errors.email && touched.email ? (
                                                 <div className={styles.error}>{errors.email}</div>
@@ -68,24 +62,6 @@ const SignUp = () => {
                                                 }) => <input className={touched && error ? "invalid" : "input"} {...field} placeholder="Email Address" />
                                                 }
                                             </Field>
-                                        </div>
-                                        <div>
-                                            {errors.occupation ? (
-                                                <div>
-                                                    <div className={styles.error}>{errors.occupation}</div>
-                                                    <Field as="select" name="occupation" className="input select invalid-select">
-                                                        <option value="" id="disabled">Select your Occupation</option>
-                                                        <option value="Student">Student</option>
-                                                        <option value="HR">HR</option>
-                                                        <option value="Dean">Dean</option>
-                                                    </Field></div>
-                                            ) : <Field as="select" name="occupation" className="input select">
-                                                <option value="" id="disabled">Select your Occupation</option>
-                                                <option value="Student">Student</option>
-                                                <option value="HR">HR</option>
-                                                <option value="Dean">Dean</option>
-                                            </Field>}
-
                                         </div>
                                         <div>
                                             {errors.password && touched.password ? (
@@ -104,27 +80,13 @@ const SignUp = () => {
                                                     <FontAwesomeIcon icon={faEye} onClick={() => setVisibility(!visible)} />}
                                             </span>
                                         </div>
-                                        <div>
-                                            {errors.confpassword && touched.confpassword ? (
-                                                <div className={styles.error}>{errors.confpassword}</div>
-                                            ) : null}
-                                            <Field name="confpassword" placeholder="Confirm Password" >
-                                                {({
-                                                    field,
-                                                    meta: { touched, error }
-                                                }) => <input type={InputType} className={touched && error ? "invalid" : "input"} {...field} placeholder="Confirm Password" />
-                                                }
-                                            </Field>
-                                            <span className={styles.passwordtoggle}>
-                                                {visible ?
-                                                    <FontAwesomeIcon icon={faEyeSlash} onClick={() => setVisibility(!visible)} /> :
-                                                    <FontAwesomeIcon icon={faEye} onClick={() => setVisibility(!visible)} />}
-                                            </span>
+                                        <div className={styles.newforgot}>
+                                            <a href="" className={styles.newforgotlink}>New User?</a>
+                                            <a href="" className={styles.newforgotlink}>Forgot Password?</a>
                                         </div>
-                                        <div><a href="" className={styles.already}>Already have an account?</a></div>
                                     </div>
                                     <div>
-                                        <button className={styles.signupbtn} type="submit">Sign Up</button>
+                                        <button className={styles.loginbtn} type="submit">Sign Up</button>
                                     </div>
                                 </Form>
                             )}
@@ -153,4 +115,4 @@ const SignUp = () => {
     )
 }
 
-export default SignUp
+export default LoginPage

@@ -13,14 +13,14 @@ const DashBoardPage = () => {
         <div className={styles.dashBoard}>
             {/* <DNavbar /> */}
             <div className={styles.dashboardContainer}>
-            <div><DSidebar/></div>
-            <div>
-            <MyAccount/>
-            <AppStatus/>
-            <Application/>
-            <Documents/>
-            <Settings/>
-            </div>
+                <div><DSidebar /></div>
+                <div>
+                    <MyAccount />
+                    <AppStatus />
+                    <Application />
+                    <Documents />
+                    <Settings />
+                </div>
             </div>
         </div>
     )
