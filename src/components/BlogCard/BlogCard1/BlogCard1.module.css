@@ -51,7 +51,7 @@ li {
   color: #550d61;
   font-weight: bold;
   display: inline-block;
-  width: 5px;
+  /* width: 5px; */
   height: 5px;
   margin-left: 6px;
   margin-right: 5px;
@@ -100,10 +100,24 @@ li {
     width: 100%;
   }
 
+  .status {
+    margin: 2rem 3rem 0 3rem;
+    margin-right: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .type::before {
+    content: "\2022";
+    width: 5px;
+    height: 5px;
+    margin-right: 1rem;
+  }
+
   .type {
-    width: 41%;
+    /* width: 41%; */
     font-size: 2.2rem;
-    line-height: 2.2rem;
+    line-height: 2.2rem;   
   }
   .date {
     font-size: 2.2rem;
@@ -114,6 +128,10 @@ li {
     line-height: 2.2rem;
   }
 
+  .totalcontent {
+    margin: 4rem 5rem 0 6rem;
+  }
+
   .heading {
     font-size: 3.2rem;
     line-height: 3.8rem;
@@ -121,6 +139,10 @@ li {
   .content {
     font-size: 2.2rem;
     line-height: 2.2rem;
+  }
+
+  .data {
+    margin: 4rem 8rem 2rem 8rem;
   }
 
   .like img{
@@ -140,5 +162,41 @@ li {
   .card {
     width: 90%;
     margin-right: 0px;
+  }
+
+  .status {
+    margin-right: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .type::before {
+    content: "\2022";
+    width: 10px;
+    height: 10px;
+  }
+
+  .type {
+    font-size: 1.2rem;
+    line-height: 1.2rem;   
+  }
+
+  .date {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+
+  .readtime {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+
+  .totalcontent {
+    margin-left: 2rem;
+  }
+
+  .data {
+    margin-left: 4rem;
+    margin-right: 4rem;
   }
 }

@@ -110,11 +110,15 @@
     display: none;
   }
 
+  .leftcontent {
+    margin-right: 10rem;
+  }
+
   .camGalImg {
-    width: 124vw;
-    height: 100vh;
+    width: 600px;
+    height: 600px;
     border-radius: 50%;
-    margin-right: 15rem;
+    /* margin-right: 15rem; */
   }
   .homeSection1 {
     /* text-align: center; */
@@ -128,8 +132,21 @@
     padding: 50px;
   }
 
+  .homeSec1Info h1 {
+    font-size: 50px;
+  }
+
   .homeSec1Info p {
-    font-size: 30px;
+    font-size: 35px;
     line-height: 2rem;
+  }
+
+  .homeSec1BtnContainer {
+    margin: 2rem 0 0 5rem; 
+  }
+
+  .homeSec1Btn {
+    font-size: 40px;
+    padding: 1rem;
   }
 }
