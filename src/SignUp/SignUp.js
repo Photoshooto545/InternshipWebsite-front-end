@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styles from './signup.module.css';
 import logo from './logo.png';
 import photo from './Group (1).png';
-import { Formik, Form, Field, ErrorMessage, getIn } from "formik";
+import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF, faGoogle, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
@@ -16,6 +16,7 @@ const SignUp = () => {
         email: Yup.string()
             .email("Invalid Email!")
             .required("Email is Required!"),
+        occupation: Yup.string().required("Select an Occupation!"),
         password: Yup.string()
             .min(8, "Password Must Contain Atleast 8 characters!")
             .matches(/^.*(?=.{8,})((?=.*[!@#$%^&*()\-_=+{};:,<.>]){1})(?=.*\d).*$/,
@@ -47,6 +48,7 @@ const SignUp = () => {
                         <h2 className={styles.heading}>Sign Up</h2>
                         <Formik initialValues={{
                             email: '',
+                            occupation: '',
                             password: '',
                             confpassword: '',
                         }}
@@ -66,6 +68,24 @@ const SignUp = () => {
                                                 }) => <input className={touched && error ? "invalid" : "input"} {...field} placeholder="Email Address" />
                                                 }
                                             </Field>
+                                        </div>
+                                        <div>
+                                            {errors.occupation ? (
+                                                <div>
+                                                    <div className={styles.error}>{errors.occupation}</div>
+                                                    <Field as="select" name="occupation" className="input select invalid-select">
+                                                        <option value="" id="disabled">Select your Occupation</option>
+                                                        <option value="Student">Student</option>
+                                                        <option value="HR">HR</option>
+                                                        <option value="Dean">Dean</option>
+                                                    </Field></div>
+                                            ) : <Field as="select" name="occupation" className="input select">
+                                                <option value="" id="disabled">Select your Occupation</option>
+                                                <option value="Student">Student</option>
+                                                <option value="HR">HR</option>
+                                                <option value="Dean">Dean</option>
+                                            </Field>}
+
                                         </div>
                                         <div>
                                             {errors.password && touched.password ? (

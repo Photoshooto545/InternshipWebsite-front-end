@@ -1,3 +1,19 @@
+#skills {
+    margin: 2rem 0 1rem 3rem;
+    width: 91%;
+    padding: 0.8rem;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+#skills::placeholder {
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(55, 54, 54, 0.5);
+}
+
 .skillsbox {
     border: 1px solid #9A9A9A;
     box-sizing: border-box;
@@ -42,4 +58,20 @@
 .plusicon {
     margin-left: 0.3rem;
     font-size: larger;
+}
+
+.addbtn {
+    padding: 0 2rem;
+    height: 2.6rem;
+    border: none;
+    background-color: #0096c7;
+    margin-left: -7rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.hidden {
+    display: none;
 }
