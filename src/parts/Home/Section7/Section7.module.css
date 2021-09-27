@@ -110,6 +110,19 @@ select.doyoulikeinternshipdetails {
   height: 18rem;
 }
 
+@media only screen and (max-width: 700px) {
+  .rightdoyoulikeinternshipimage {
+    display: none;
+  }
+
+  .rightdoyoulikeinternship {
+    width: 0%;
+  }
+
+  .doyoulikeinternship {
+    justify-content: center;
+  }
+}
 /* .subscribetonewsletter{
   width: 100%;
   display: flex;
