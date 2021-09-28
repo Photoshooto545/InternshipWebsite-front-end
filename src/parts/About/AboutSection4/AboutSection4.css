@@ -1,6 +1,15 @@
 .container {
   max-width: 95%;
 }
+
+.meetouter {
+  display: flex;
+}
+
+.aboutleaderouter {
+  display: flex;
+}
+
 .ceoname {
   font-family: Arial;
   font-style: normal;
@@ -8,8 +17,16 @@
   font-size: 24px;
   line-height: 28px;
   /* identical to box height */
-
   color: #000000;
+}
+
+.rounded-circle {
+  margin: 1rem 0 1rem 1rem;
+}
+
+.leaderinfo {
+  text-align: center;
+  /* margin-left: 1.5rem; */
 }
 
 .directorheading {
@@ -20,7 +37,7 @@
   line-height: 28px;
   color: #000000;
 }
-.meetaurleaders {
+.meetourleaders {
   font-family: Arial;
   font-style: normal;
   font-weight: bold;
@@ -141,16 +158,19 @@ html {
 }
 
 .wwd-para {
-  font-size: 18px;
+  font-weight: normal;
+  font-size: 20px;
+  color: #000000;
+  margin: 3rem;
 }
-.wwd-name {
+/* .wwd-name {
   margin-top: 10px !important;
   font-size: 15px;
   font-weight: bold;
 }
 .wwd-title {
   font-size: 12px;
-}
+} */
 
 .accordianbox {
   border-radius: 20px;
@@ -160,39 +180,66 @@ html {
 }
 
 @media only screen and (max-width: 700px) {
-  .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .col {
-    display: contents;
-  }
-
-  .col-4 {
-    width: 95%;
-  }
-
-  .meetaurleaders {
+  .meetourleaders {
     font-size: 3.6rem;
     padding-bottom: 35px;
   }
 
-  .rounded-circle {
-    height: 74vh;
-    width: 62vw;
+  .meetouter {
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  .wwd-para {
+  .aboutleaderouter {
+    width: 100%;
+  }
+
+  .leaderinfo {
+    display: flex;
+    flex-direction: column;
+    /* width: 50%; */
+  }
+
+  .ceofounderpart {
+    /* margin: 2rem; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    width: 35rem;
+    /* align-items: center; */
+  }
+
+  .directorpart {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-top: 3rem;
+    width: 35rem;
+  }
+
+  .rounded-circle {
+    width: 350px;
+    height: 350px;
+  }
+
+  .ceofounderpara p {
+    /* width: 40rem; */
+    margin-top: 5rem;
     font-size: 2.7rem;
     line-height: 2.5rem;
+    margin-left: 5rem;
   }
+
   .ceoname {
     font-size: 3.5rem;
     line-height: 5rem;
   }
+
+  .directorpara p {
+    margin-top: 7rem;
+    font-size: 2.7rem;
+  }
+
   .directorheading {
     font-size: 3rem;
     line-height: 1.5rem;
@@ -216,7 +263,7 @@ html {
   }
 }
 @media only screen and (min-width: 700px) and (max-width: 1100px) {
-  .meetaurleaders {
+  .meetourleaders {
     font-size: 47px;
   }
   .wwd-para {
