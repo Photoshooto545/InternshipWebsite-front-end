@@ -106,14 +106,14 @@ const MyAccount = () => {
                     <div className={styles.content}>
                         <h1 className={styles.heading2}>Experience</h1>
                     </div>
-                    <div className={styles.edit}><Link to="/"><button className={styles.btn}>Add Experience
+                    <div className={styles.edit}><Link to="/addexperience"><button className={styles.btn}>Add Experience
                     </button></Link></div>
                 </div>
                 <div className={styles.section}>
                     <div className={styles.content}>
                         <h1 className={styles.heading2}>Education</h1>
                     </div>
-                    <div className={styles.edit}><Link to="/"><button className={styles.btn}>Add Education
+                    <div className={styles.edit}><Link to="/addeducation"><button className={styles.btn}>Add Education
                     </button></Link></div>
                 </div>
                 <div className={styles.section}>
