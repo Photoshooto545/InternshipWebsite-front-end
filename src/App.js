@@ -17,6 +17,7 @@ import Footer from "./Footer/footer"
 import ForgotPassword from "./Pages/Forgotpassword/ForgotPass";
 import AddEducation from "./Pages/AddEducation/AddEducation";
 import AddExperience from "./Pages/AddExperience/AddExperience";
+import AddSkills from "./Add Skills/AddSkills"
 function App() {
   return (
     <Router>
@@ -34,6 +35,7 @@ function App() {
         <Route exact path="/dashboard" component={DashBoardPage} />
         <Route exact path="/addeducation" component={AddEducation} />
         <Route exact path="/addexperience" component={AddExperience} />
+        <Route exact path="/addskills" component={AddSkills} />
         {/* <Route component={NotfoundPage} /> */}
         <Route exact path="/forgotpassword" component={ForgotPassword} />
       </Switch>
