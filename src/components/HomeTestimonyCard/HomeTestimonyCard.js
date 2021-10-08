@@ -1,6 +1,7 @@
 import React from "react";
 
 import styles from "./HomeTestimonyCard.module.css";
+import "./HomePagination.css";
 // import globalStyles from "../../../assets/global-styles/bootstrap.min.module.css";
 // import cx from "classnames";
 

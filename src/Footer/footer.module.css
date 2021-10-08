@@ -133,11 +133,11 @@ form {
   box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.25);
   border-radius: 0.9rem;
   border: none;
+  padding-left: 1.87rem;
 }
 
 #email::placeholder {
   color: #a1a1a1;
-  padding-left: 1.87rem;
   font-weight: normal;
   font-size: 1.12rem;
   line-height: 1.31rem;
