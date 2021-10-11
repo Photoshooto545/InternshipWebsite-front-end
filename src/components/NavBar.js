@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 import logo from "../assets/images/logo.png";
 import profile from '../assets/images/man-1845814_640 1.png'
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./NavBar.css";
 
 const NavBar = () => {
+  const [clicked, setClicked] = useState(false);
+  const handleClick = () => {
+    setClicked(!clicked)
+  }
   return (
     // <div>
     <>
@@ -20,7 +26,12 @@ const NavBar = () => {
                 <img src={logo} alt="PhotoShooto" />
               </Link>
             </div>
-            <div className="navLinks">
+            <div className="menu-icon" onClick={handleClick}>
+              {
+                clicked ? <FontAwesomeIcon clasName='fas fa-times' icon={faTimes} /> : <FontAwesomeIcon className='fas fa-bars' icon={faBars} />
+              }
+            </div>
+            <div className={clicked ? 'nav-menu active' : 'nav-menu'}>
               <NavLink exact activeClassName="active" to="/">
                 Home
               </NavLink>
@@ -33,9 +44,15 @@ const NavBar = () => {
               <NavLink activeClassName="active" to="/blog">
                 Blog
               </NavLink>
-              <NavLink activeClassName="active" to="/contact">
+              <NavLink activeClassName="active" to="/about">
                 Contact
               </NavLink>
+              <div className="navUser-mobile">
+
+                <NavLink activeClassName="active" to="/dashboard">
+                  <img className="profile" src={profile} alt="profile-pic" /> DashBoard
+                </NavLink>
+              </div>
             </div>
             <div className="navUser">
 

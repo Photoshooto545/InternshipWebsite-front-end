@@ -35,16 +35,18 @@
 
 .row1 {
   display: flex;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   width: 100%;
-  margin-top: 10%;
+  margin-top: 2.5rem;
+  margin-left: 3rem;
 }
 .row2 {
   display: flex;
   width: 100%;
-  justify-content: flex-end;
-  align-items: flex-start;
-  margin-top: 20px;
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+  margin-top: 10px;
+  margin-left: 8rem;
 }
 .imagethree {
   width: 208px;
@@ -94,32 +96,34 @@
   }
 
   .row1 {
-    width: 394%;
+    width: 100%;
     height: 51%;
-    margin-top: -1%;
-    margin-bottom: 150px;
+    margin-top: 3rem;
+    margin-bottom: 100px;
   }
 
   .imagethree {
-    width: 165vw;
-    height: 415px;
-    margin-left: 2%;
+    width: 130vw;
+    height: 350px;
+    /* margin-left: 2%; */
   }
 
   .imagetwo {
-    width: 165vw;
-    height: 415px;
-    margin-right: 1%;
+    width: 130vw;
+    height: 350px;
+    /* margin-right: 1%; */
   }
 
   .row2 {
-    width: 200%;
+    width: 100%;
+    margin-left: 15rem;
   }
+
   .container {
-    border-top: 450px solid transparent;
-    border-right: 300px solid transparent;
+    border-top: 490px solid transparent;
+    border-right: 200px solid transparent;
     border-bottom: 450px solid transparent;
-    border-left: 400vw solid #005a8c;
+    border-left: 340vw solid #005a8c;
   }
 
   .before {

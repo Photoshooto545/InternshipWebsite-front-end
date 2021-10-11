@@ -24,11 +24,11 @@ const BlogSection1 = () => {
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  style={{ height: "84vh" }}
+                  style={{ height: "100vh" }}
                   src={img}
                   alt="First slide"
                 />
-                <Carousel.Caption style={{ top: "16.25rem" }}>
+                <Carousel.Caption style={{ top: "12.25rem" }}>
                   <h3>{Slide.title}</h3>
                   <p>{Slide.info}</p>
                   <div className={styles.searchbar}>

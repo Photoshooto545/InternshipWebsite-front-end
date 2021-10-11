@@ -88,30 +88,37 @@
     height: 65vh;
   }
 
+  .leftRectangle {
+    left: 66%;
+    top: 40%;
+  }
+
   .homeSec1Info p {
     font-size: 25px;
     line-height: 1.5rem;
   }
 
   .camGalImg {
-    width: 70vw;
-    height: 70vw;
-}
+    width: 43vw;
+    height: 40vw;
+    margin-right: 11rem;
+  }
 }
 
 @media only screen and (max-width: 700px) {
   .leftRectangle {
-    width: 22vw;
-    height: 17vh;
-    left: 61%;
-    top: 34%;
+    display: none;
+  }
+
+  .leftcontent {
+    margin-right: 10rem;
   }
 
   .camGalImg {
-    width: 144vw;
-    height: 80vh;
+    width: 600px;
+    height: 600px;
     border-radius: 50%;
-    margin-right: 3rem;
+    /* margin-right: 15rem; */
   }
   .homeSection1 {
     /* text-align: center; */
@@ -125,8 +132,21 @@
     padding: 50px;
   }
 
+  .homeSec1Info h1 {
+    font-size: 50px;
+  }
+
   .homeSec1Info p {
-    font-size: 30px;
+    font-size: 35px;
     line-height: 2rem;
+  }
+
+  .homeSec1BtnContainer {
+    margin: 2rem 0 0 5rem; 
+  }
+
+  .homeSec1Btn {
+    font-size: 40px;
+    padding: 1rem;
   }
 }

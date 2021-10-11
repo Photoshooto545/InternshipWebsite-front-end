@@ -59,8 +59,8 @@
 .mobileimage{
   position: absolute;
   top: 0;
-  margin-left: 15rem;
-  width: 28rem;
+  margin-left: 11rem;
+  width: 26rem;
   height: 100%;
 }
 
@@ -68,8 +68,8 @@
   content: "";
   position: absolute;
   margin-top: 3.4rem;
-  margin-left: 24.1rem;
-  width: 10rem;
+  margin-left: 19.5rem;
+  width: 9.4rem;
   height: 18.8rem;
   z-index: 10;
   background: #F2F2F2;
@@ -78,12 +78,11 @@
   border-radius: 9px;
 }
 
-
 .logoimageinsidethephone{
   position: absolute;
   margin-top: 9rem;
-  margin-left: 24.5rem;
-  width: 9rem;
+  margin-left: 19.8rem;
+  width: 8rem;
   z-index: 11;
 }
 

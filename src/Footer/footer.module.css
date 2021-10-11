@@ -133,11 +133,11 @@ form {
   box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.25);
   border-radius: 0.9rem;
   border: none;
+  padding-left: 1.87rem;
 }
 
 #email::placeholder {
   color: #a1a1a1;
-  padding-left: 1.87rem;
   font-weight: normal;
   font-size: 1.12rem;
   line-height: 1.31rem;
@@ -219,9 +219,9 @@ label {
 
 @media only screen and (max-width: 700px) {
   .right span {
-    font-size: 3.2rem;
+    font-size: 2.6rem;
     line-height: 3.38rem;
-    margin-left: 3.2rem;
+    margin-left: 5.2rem;
   }
 
   .right img {
@@ -266,7 +266,7 @@ label {
   }
 
   input[type="checkbox"] {
-    width: 3.18rem;
+    width: 3.18rem !important;
     height: 3.18rem;
   }
 
@@ -288,7 +288,7 @@ label {
     height: 4rem;
   }
 
-  svg{
+  .fab svg{
       height: 3.8rem;
   }
 
