@@ -37,17 +37,20 @@ const ProgramPage = () => {
 
   return (
     <div className="programPageContainer">
+<<<<<<< HEAD
+=======
       {/* <div className="navbar-background"></div> */}
 
+>>>>>>> cb1da6594b428b622d2ab78338a137eba7569856
       {/* First section containing Title and the specific image------------------*/}
-      <div className="program-head">
+      <div className="program-head" style={{backgroundColor: `${program.colors.backgroundColor}`}}>
         <div className="title-div">
           <h2>{program.title}</h2>
           <div className="lower-bar"></div>
           <p>{program.description}</p>
           <div className="apply-btn">Apply</div>
         </div>
-        <div className="program-image"></div>
+        <div className="program-image"style={{backgroundImage: `url(${program.bannerImg})`}}></div>
       </div>
 
       {/* Second section containing Internship Information--------------------*/}
