@@ -37,11 +37,10 @@ const ProgramPage = () => {
 
   return (
     <div className="programPageContainer">
-<<<<<<< HEAD
-=======
+
       {/* <div className="navbar-background"></div> */}
 
->>>>>>> cb1da6594b428b622d2ab78338a137eba7569856
+
       {/* First section containing Title and the specific image------------------*/}
       <div className="program-head" style={{backgroundColor: `${program.colors.backgroundColor}`}}>
         <div className="title-div">

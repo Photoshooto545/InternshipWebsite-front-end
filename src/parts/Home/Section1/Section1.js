@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 import styles from "./Section1.module.css";
 // import globalStyles from "../../../assets/global-styles/bootstrap.min.module.css";
 // import cx from "classnames";
@@ -18,7 +18,7 @@ const Section1 = () => {
             nulla
           </p>
           <div className={styles.homeSec1BtnContainer}>
-            <div className={styles.homeSec1Btn}>Know More</div>
+            <div className={styles.homeSec1Btn}><Link style={{ textDecoration: 'none' }} to="/about" >Know More</Link></div>
           </div>
         </div>
       </div>

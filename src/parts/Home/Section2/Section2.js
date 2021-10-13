@@ -23,7 +23,7 @@ const Section2 = () => {
             similique quis esse! Iure pariatur quisquam sit culpa, voluptas id.
             Sunt quas dolorem mollitia.
           </p>
-          <Link to="#">Read more</Link>
+          <Link to="/programs">Read more</Link>
         </div>
       </div>
     </section>
